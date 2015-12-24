@@ -8,8 +8,8 @@ body {
 	background-color: #e8e8e8;
 	width: 100%;
 	margin-top: 0px;
-	padding-top: 38px;
-	padding-bottom: 38px;
+	padding-top: 35px;
+	padding-bottom: 25px;
 	/*position: absolute;*/
 	text-align: center;
 	z-index: 1;
@@ -27,26 +27,33 @@ body {
 	line-height: 120%;
 }
 
-#recent_events {
+#upcoming_events {
 	float: left;
 	width: 100%;
-	background-color: #FFFFFF;
+	background-image: url("images/upcoming_events_background_c.jpg");
+	background-size: cover;
+	background-color: #d8d8d8;
 	z-index: 1;
 	text-align: center;
 }
-#recent_events h2 {
+#upcoming_events h2 {
 	text-align: center;
-	margin-top: 60px;
+	font-size: 30px;
+	font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #f8f8f8;
+	text-shadow: 2px 2px #202020;
+	margin-top: 55px;
 	margin-bottom: 0px;
 }
 div.img_container {
-	margin: 30px 40px 30px 40px;
-	padding-bottom: 1em;
-	border: 1px solid #909090;
+	margin: 25px 40px 60px 40px;
+	padding-bottom: 10px;
+	border: 0.5px solid #000000;
 	border-radius: 15px;
 	width: 400px;
 	display: inline-block;
-	background-color: 
+	background: rgb(176, 176, 176);
+	background: rgba(176, 176, 176, 0.6);
 }
 div.img_container img {
 	/* NOTE: All image thumbnails must have the same size */
@@ -54,9 +61,23 @@ div.img_container img {
 	height: auto;
 	border-radius: 15px 15px 0px 0px;
 }
-div.event_desc {
-	padding-left: 10px;
-	text-align: left;
+div.event_desc_title {
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 1px 1px #101010;
+	margin-bottom: 5px;
+}
+div.event_desc p {
+	font-size: 15px;
+	font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-shadow: 1px 1px #101010;
 }
 
 /*

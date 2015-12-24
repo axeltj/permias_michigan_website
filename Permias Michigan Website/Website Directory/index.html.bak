@@ -117,17 +117,18 @@ $(document).on("scroll",function(){
         <br>
         GO BLUE!</p>
     </div>
-    <div  id="recent_events">
-      <h2>RECENT EVENTS</h2>
-      <div  class="img_container"> <a  href="gallery.html"><img  src="images/batik-edited.jpg"
+    <div  id="upcoming_events">
+      <h2>UPCOMING EVENTS</h2>
+      <div  class="img_container"> <a  href="gallery.html"><img  src="images/icn_2015_thumb.jpg"
 
              alt="event_thumbnail"></a>
-        <div  class="event_desc">Description of image</div>
+        <div  class="event_desc_title">Indonesian Cultural Night 2016</div><div class="event_desc"><p>Date:<br>Venue:<br></p></div>
       </div>
-      <div  class="img_container"> <a  href="gallery.html"><img  src="images/batik2.jpg"
+      <div  class="img_container"> <a  href="gallery.html"><img  src="images/icn_2015_thumb.jpg"
 
              alt="event_thumbnail"></a>
-        <div  class="event_desc">Description of image</div>
+        <div  class="event_desc_title">Indonesian Cultural Night 2016</div>
+        <div class="event_desc"><p>Date:<br>Venue:<br></p></div>
       </div>
     </div>
   </body>
