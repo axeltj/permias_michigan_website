@@ -117,11 +117,11 @@ $(document).on("scroll",function(){
         <br>
         GO BLUE!</p>
     </div>
-    <div  id="upcoming_events">
+    <div  id="upcoming_events"><!--TODO: CHANGE HREF OF IMAGE CONTAINER TO FACEBOOK EVENT-->
       <h2>UPCOMING EVENTS</h2>
-      <div  class="img_container"> <a  href="gallery.html"><img  src="images/icn_2015_thumb.jpg"
-
-             alt="event_thumbnail"></a>
+      <div  class="uevent_container"> <a  href="#">
+          <div  class="uimg_container"><img  src="images/icn_2015_thumb.jpg"  alt="event_thumbnail"></div>
+        </a>
         <div  class="event_desc_title">Indonesian Cultural Night 2016</div>
         <div  class="event_desc">
           <p>Our annual event where we showcase the diverse Indonesian culture
@@ -130,9 +130,9 @@ $(document).on("scroll",function(){
             Venue: TBA</p>
         </div>
       </div>
-      <div  class="img_container"> <a  href="gallery.html"><img  src="images/icn_2015_thumb.jpg"
+      <div  class="uevent_container"> <a  href="#"><div class="uimg_container"><img  src="images/icn_2015_thumb.jpg"
 
-             alt="event_thumbnail"></a>
+                                                                                    alt="event_thumbnail"></div></a>
         <div  class="event_desc_title">Indonesian Cultural Night 2016</div>
         <div  class="event_desc">
           <p>Our annual event where we showcase the diverse Indonesian culture
@@ -142,5 +142,6 @@ $(document).on("scroll",function(){
         </div>
       </div>
     </div>
+    <div  id="recent_events"> </div>
   </body>
 </html>
