@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  content="text/html; charset=utf-8"  http-equiv="content-type">
+    <title>PERMIAS Michigan</title>
+    <!--stylesheet for menubar-->
+    <link  rel="stylesheet"  type="text/css"  href="menubar.css">
+    <!--main stylesheet-->
+    <link  rel="stylesheet"  type="text/css"  href="main.css">
+    <meta  content="Christian Axel"  name="author">
+    <meta  content="The Official Permias Michigan Website"  name="description">
+    <!-- Start SLIDER HEAD section -->
+    <link  rel="stylesheet"  type="text/css"  href="engine0/style.css">
+    <script  type="text/javascript"  src="engine0/jquery.js"></script>
+    <!-- End SLIDER HEAD section -->
+  </head>
+  <body>
+    <header  class="large">
+      <nav> <a  href="index.html"><img  class="navbar_logo"  src="images/Permias_Logo_Transparent_Yellow.png"
+
+             alt="Permias Logo"></a>
+        <ul>
+          <li><a  class="active"  href="index.html">Home</a></li>
+          <li><a  href="gallery.html">Gallery</a></li>
+          <li><a  href="contacts.html">Contact Us</a></li>
+        </ul>
+        <a  href="https://www.facebook.com/permias.michigan/"><img  class="facebook_logo"
+
+             src="images/facebook_icon_bw_64.png"  alt="Facebook Logo"></a> <a
+
+           href="https://www.instagram.com/permiasmichigan/"><img  class="instagram_logo"
+
+             src="images/instagram_icon_bw_64.png"  alt="Instagram Logo"></a> </nav>
+      <script  type="text/javascript">
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>100){
+        $("header").removeClass("large").addClass("small");
+    } else{
+        $("header").removeClass("small").addClass("large");
+    }
+});
+</script> </header>
+    <!-- Start SLIDER BODY section -->
+    <div  style="background-color: #505050">
+      <div  id="wowslider-container0">
+        <div  class="ws_images">
+          <ul>
+            <li><img  src="data0/images/slideshow_1_text.jpg"  alt=""  title=""
+
+                 id="wows0_0"></li>
+            <li><img  src="data0/images/slideshow_2.jpg"  alt="A2SF2 Night 2014"
+
+                 title="A2SF2 Night 2014"  id="wows0_1"></li>
+            <li><img  src="data0/images/slideshow_3.jpg"  alt="Law Library"  title="Law Library"
+
+                 id="wows0_2"></li>
+            <li><img  src="data0/images/slideshow_4.jpg"  alt="Game Day"  title="Game Day"
+
+                 id="wows0_3"></li>
+            <li><img  src="data0/images/slideshow_5.jpg"  alt="Michigan Squirrel"
+
+                 title="Michigan Squirrel"  id="wows0_4"></li>
+            <li><img  src="data0/images/slideshow_6.jpg"  alt="slider"  title="Central Campus"
+
+                 id="wows0_5"></li>
+            <li><img  src="data0/images/slideshow_7.jpg"  alt="Brunch at Zingerman's"
+
+                 title="Brunch at Zingerman's"  id="wows0_6"></li>
+          </ul>
+        </div>
+        <div  class="ws_bullets">
+          <div> <a  href="#"  title=""><span><img  src="data0/tooltips/slideshow_1_text.jpg"
+
+                   alt="">1</span></a> <a  href="#"  title="A2SF2 Night 2014"><span><img
+
+                   src="data0/tooltips/slideshow_2.jpg"  alt="A2SF2 Night 2014">2</span></a>
+            <a  href="#"  title="Law Library"><span><img  src="data0/tooltips/slideshow_3.jpg"
+
+                   alt="Law Library">3</span></a> <a  href="#"  title="Game Day"><span><img
+
+                   src="data0/tooltips/slideshow_4.jpg"  alt="Game Day">4</span></a>
+            <a  href="#"  title="Michigan Squirrel"><span><img  src="data0/tooltips/slideshow_5.jpg"
+
+                   alt="Michigan Squirrel">5</span></a> <a  href="#"  title="Central Campus"><span><img
+
+                   src="data0/tooltips/slideshow_6.jpg"  alt="Central Campus">6</span></a>
+            <a  href="#"  title="Brunch at Zingerman's"><span><img  src="data0/tooltips/slideshow_7.jpg"
+
+                   alt="Brunch at Zingerman's">7</span></a> </div>
+        </div>
+      </div>
+      <script  type="text/javascript"  src="engine0/wowslider.js"></script>
+      <script  type="text/javascript"  src="engine0/script.js"></script> </div>
+    <!-- End SLIDER BODY section -->
+    <!--START CONTENT-->
+    
+  </body>
+</html>
+<!-- Start WOWSlider.com BODY section -->
+<!-- add to the <body> of your page -->
