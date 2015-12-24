@@ -45,9 +45,9 @@ $(document).on("scroll",function(){
       <div  id="wowslider-container0">
         <div  class="ws_images">
           <ul>
-            <li><img  src="data0/images/slideshow_1_text.jpg"  alt=""
+            <li><img  src="data0/images/slideshow_1_text.jpg"  alt=""  title=""
 
-                 title=""  id="wows0_0"></li>
+                 id="wows0_0"></li>
             <li><img  src="data0/images/slideshow_2.jpg"  alt="A2SF2 Night 2014"
 
                  title="A2SF2 Night 2014"  id="wows0_1"></li>
@@ -117,7 +117,6 @@ $(document).on("scroll",function(){
         <br>
         GO BLUE!</p>
     </div>
+    <div id=""></div>
   </body>
 </html>
-<!-- Start WOWSlider.com BODY section -->
-<!-- add to the <body> of your page -->
