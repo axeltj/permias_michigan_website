@@ -48,7 +48,8 @@ header a:hover{
 header li{
 	display: inline;
 	float: center;
-	margin-right: 90px;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 
 img.navbar_logo{
