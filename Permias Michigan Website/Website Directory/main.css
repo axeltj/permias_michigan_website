@@ -2,14 +2,15 @@ body {
 	background-color: #d7d7d7;
 	margin:0;
 }
+
 #about-us {
+	float: left;
 	background-color: #e8e8e8;
 	width: 100%;
 	margin-top: 0px;
-	margin-bottom: 50px;
 	padding-top: 38px;
 	padding-bottom: 38px;
-	position: absolute;
+	/*position: absolute;*/
 	text-align: center;
 	z-index: 1;
 }
@@ -25,6 +26,39 @@ body {
 	color: #333333;
 	line-height: 120%;
 }
+
+#recent_events {
+	float: left;
+	width: 100%;
+	background-color: #FFFFFF;
+	z-index: 1;
+	text-align: center;
+}
+#recent_events h2 {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+div.img_container {
+	margin: 30px 40px 30px 40px;
+	padding-bottom: 1em;
+	border: 1px solid #909090;
+	border-radius: 15px;
+	width: 400px;
+	display: inline-block;
+	background-color: 
+}
+div.img_container img {
+	/* NOTE: All image thumbnails must have the same size */
+	width: 100%;
+	height: auto;
+	border-radius: 15px 15px 0px 0px;
+}
+div.event_desc {
+	padding-left: 10px;
+	text-align: left;
+}
+
 /*
 #ft {
 	position: absolute;

@@ -112,11 +112,23 @@ $(document).on("scroll",function(){
         <br>
         Please do not hesitate to contact any of our admins for inquiries or
         information.<br>
-        We will do our best to help you as each and every one of you is
-        important to us!<br>
+        We'll do our best to help you as each and every one of you is important
+        to us!<br>
         <br>
         GO BLUE!</p>
     </div>
-    <div id=""></div>
+    <div  id="recent_events">
+      <h2>RECENT EVENTS</h2>
+      <div  class="img_container"> <a  href="gallery.html"><img  src="images/batik-edited.jpg"
+
+             alt="event_thumbnail"></a>
+        <div  class="event_desc">Description of image</div>
+      </div>
+      <div  class="img_container"> <a  href="gallery.html"><img  src="images/batik2.jpg"
+
+             alt="event_thumbnail"></a>
+        <div  class="event_desc">Description of image</div>
+      </div>
+    </div>
   </body>
 </html>
