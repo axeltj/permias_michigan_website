@@ -68,7 +68,7 @@ div.event_desc_title {
 	color: #ffffff;
 	text-align: center;
 	text-shadow: 1px 1px #101010;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 div.event_desc p {
 	font-size: 15px;

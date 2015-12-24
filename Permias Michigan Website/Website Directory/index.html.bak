@@ -122,14 +122,23 @@ $(document).on("scroll",function(){
       <div  class="img_container"> <a  href="gallery.html"><img  src="images/icn_2015_thumb.jpg"
 
              alt="event_thumbnail"></a>
-        <div  class="event_desc_title">Indonesian Cultural Night 2016</div><div class="event_desc"><p>Date:<br>Venue:<br></p></div>
+        <div  class="event_desc_title">Indonesian Cultural Night 2016</div>
+        <div  class="event_desc">
+          <p>Our annual event where we showcase the diverse Indonesian culture
+            through performances and food!<br>Date: TBA<br>
+            Venue: TBA</p>
+        </div>
       </div>
       <div  class="img_container"> <a  href="gallery.html"><img  src="images/icn_2015_thumb.jpg"
 
              alt="event_thumbnail"></a>
         <div  class="event_desc_title">Indonesian Cultural Night 2016</div>
-        <div class="event_desc"><p>Date:<br>Venue:<br></p></div>
+        <div  class="event_desc">
+          <p>Date:<br>
+            Venue:</p>
+        </div>
       </div>
     </div>
+    
   </body>
 </html>
