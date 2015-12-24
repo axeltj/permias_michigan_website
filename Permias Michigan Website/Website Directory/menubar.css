@@ -80,10 +80,18 @@ header.large img.facebook_logo{
 	top: 25px;
 	right: 80px;
 }
+header.large img.facebook_logo:hover{
+	width:50px;
+	top: 21px;
+}
 header.large img.instagram_logo{
 	width: 42px;
 	top: 25px;
 	right: 20px;
+}
+header.large img.instagram_logo:hover{
+	width:50px;
+	top: 21px;
 }
 
 /* Sizes for the smaller menu */
@@ -106,9 +114,16 @@ header.small img.facebook_logo{
 	top: 12px;
 	right: 40px;
 }
+header.small img.facebook_logo:hover{
+	width: 24px;
+	top: 10px;
+}
 header.small img.instagram_logo{
 	width: 20px;
 	top: 12px;
 	right: 10px;
 }
-
+header.small img.instagram_logo:hover{
+	width: 24px;
+	top:10px;
+}
