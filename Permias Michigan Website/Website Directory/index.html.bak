@@ -126,8 +126,8 @@ $(document).on("scroll",function(){
         <div  class="event_desc">
           <p>Our annual event where we showcase the diverse Indonesian culture
             through performances and food!<br>
-             Date: TBA&nbsp;&nbsp;&nbsp;&nbsp;Venue: TBA<br>
-            <a  href="#"  target="_blank">Click Here</a> for Facebook Event</p>
+            Date: TBA&nbsp;&nbsp;&nbsp;&nbsp;Venue: TBA<br>
+            <a  href="#"  target="_blank">Click Here</a> for the Facebook Event</p>
         </div>
       </div>
       <div  class="uevent_container"> <a  href="#"  target="_blank">
@@ -137,11 +137,12 @@ $(document).on("scroll",function(){
         <div  class="event_desc">
           <p>Our annual event where we showcase the diverse Indonesian culture
             through performances and food!<br>
-            Date: TBA&nbsp;&nbsp;&nbsp;&nbsp;
-            Venue: TBA<br><a  href="#"  target="_blank">Click Here</a> for Facebook Event</p>
+            Date: TBA&nbsp;&nbsp;&nbsp;&nbsp; Venue: TBA<br>
+            <a  href="#"  target="_blank">Click Here</a> for the Facebook Event</p>
         </div>
       </div>
     </div>
-    <div  id="recent_events"> </div>
+    <div  id="home_gallery"> </div>
+    
   </body>
 </html>
