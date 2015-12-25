@@ -15,7 +15,6 @@
     <!-- End SLIDER HEAD section -->
   </head>
   <body>
-    <div id="fixed_background">
     <header  class="large">
       <nav> <a  href="index.html"><img  class="navbar_logo"  src="images/Permias_Logo_Transparent_Yellow.png"
 
@@ -145,6 +144,5 @@ $(document).on("scroll",function(){
       </div>
     </div>
     <div  id="home_gallery"> </div>
-    </div>
   </body>
 </html>
