@@ -13,7 +13,6 @@
     <link  rel="stylesheet"  type="text/css"  href="engine0/style.css">
     <script  type="text/javascript"  src="engine0/jquery.js"></script>
     <!-- End SLIDER HEAD section -->
-    <script  type="text/javascript"  src="script.js"></script>
   </head>
   <body>
     <header  class="large">
@@ -147,8 +146,8 @@ $(document).on("scroll",function(){
     <div  id="home_gallery">
       <h3>Check out our past events in the Gallery!</h3>
       <div  id="thumbs_section">
-        <div  id="thumb_container"><a  href="gallery.html"> 
-            <div  class="round_thumb_container"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
+        <div  id="thumb_container"><a  href="gallery.html">
+            <div  class="round_thumb_container1"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
 
                  id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
 
@@ -157,25 +156,37 @@ $(document).on("scroll",function(){
           <p>Event Description Here.<br>
             <a  href="gallery.html">View photos-&gt;</a></p>
         </div>
-        <!--
-        <div  id="thumb_container"><a  href="gallery.html">             <div  class="round_thumb_container"><img  id="thumb1_1"  src="images/thumb1.jpg"><img                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img                 id="thumb1_4"  src="images/thumb4.jpg"></div>          </a>          <p>Event Description Here.<br>            <a  href="gallery.html">View photos-&gt;</a></p>        </div>        <div  id="thumb_container"><a  href="gallery.html">            <div  class="round_thumb_container"><img  id="thumb1_1"  src="images/thumb1.jpg"><img                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img                 id="thumb1_4"  src="images/thumb4.jpg"></div>          </a>          <p>Event Description Here.<br>            <a  href="gallery.html">View photos-&gt;</a></p>        </div>        <div  id="thumb_container"><a  href="gallery.html">            <div  class="round_thumb_container"><img  id="thumb1_1"  src="images/thumb1.jpg"><img                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img                 id="thumb1_4"  src="images/thumb4.jpg"></div>          </a>          <p>Event Description Here.<br>            <a  href="gallery.html">View photos-&gt;</a></p>        </div>        -->
-        <script  type="text/javascript">
-          var isFirst = true;
+        <div  id="thumb_container"><a  href="gallery.html">
+            <div  class="round_thumb_container2"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
 
-$('.round_thumb_container img:gt(0)').hide();
-$(".round_thumb_container").hover(function(){
-	if (isFirst) {    
-    timer = setInterval(function(){   $('.round_thumb_container :first-child').fadeOut()
-    .next('img').fadeIn()
-    .end().appendTo('.round_thumb_container');},             
-    750)
-    isFirst = false;
-  }
-}, function() {
-clearInterval(timer);
-isFirst = true;
-});
-        </script> </div>
+                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
+
+                 id="thumb1_4"  src="images/thumb4.jpg"></div>
+          </a>
+          <p>Event Description Here.<br>
+            <a  href="gallery.html">View photos-&gt;</a></p>
+        </div>
+        <div  id="thumb_container"><a  href="gallery.html"> 
+            <div  class="round_thumb_container3"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
+
+                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
+
+                 id="thumb1_4"  src="images/thumb4.jpg"></div>
+          </a>
+          <p>Event Description Here.<br>
+            <a  href="gallery.html">View photos-&gt;</a></p>
+        </div>
+        <div  id="thumb_container"><a  href="gallery.html">
+            <div  class="round_thumb_container4"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
+
+                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
+
+                 id="thumb1_4"  src="images/thumb4.jpg"></div>
+          </a>
+          <p>Event Description Here.<br>
+            <a  href="gallery.html">View photos-&gt;</a></p>
+        </div>
+        <script  type="text/javascript"  src="script.js"></script> </div>
     </div>
   </body>
 </html>

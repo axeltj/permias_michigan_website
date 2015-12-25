@@ -170,7 +170,43 @@ div.event_desc p a:hover {
 	font-size: 0;
 	line-height: 0;
 }
-div .round_thumb_container {
+div .round_thumb_container1 {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #606060;
+	border-radius: 100px;
+	overflow: hidden;
+}
+div .round_thumb_container2 {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #606060;
+	border-radius: 100px;
+	overflow: hidden;
+}
+div .round_thumb_container3 {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #606060;
+	border-radius: 100px;
+	overflow: hidden;
+}
+div .round_thumb_container4 {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
