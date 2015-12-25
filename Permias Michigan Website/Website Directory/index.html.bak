@@ -146,8 +146,28 @@ $(document).on("scroll",function(){
     <div  id="home_gallery">
       <h3>Check out our past events in the Gallery!</h3>
       <div  id="all_thumbs_container"> 
-        <div  class="round_thumb_container_small"><img  src="images/IMG_4007.jpg"></div>
-      </div>
+        <div  class="round_thumb_container"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
+
+             id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
+
+             id="thumb1_4"  src="images/thumb4.jpg"></div>
+        <script  type="text/javascript">
+          var isFirst = true;
+
+$('.round_thumb_container img:gt(0)').hide();
+$(".round_thumb_container").hover(function(){
+	if (isFirst) {    
+    timer = setInterval(function(){   $('.round_thumb_container :first-child').fadeOut()
+    .next('img').fadeIn()
+    .end().appendTo('.round_thumb_container');},             
+    750)
+    isFirst = false;
+  }
+}, function() {
+clearInterval(timer);
+isFirst = true;
+});
+        </script> </div>
     </div>
   </body>
 </html>
