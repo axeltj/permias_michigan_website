@@ -144,47 +144,39 @@ $(document).on("scroll",function(){
       </div>
     </div>
     <div  id="home_gallery">
-      <h3>Check out our past events in the Gallery!</h3>
+      <h3><a  href="gallery.html">Check out our past events in the Gallery!</a></h3>
       <div  id="thumbs_section">
         <div  id="thumb_container"><a  href="gallery.html">
-            <div  class="round_thumb_container1"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
+            <div  class="round_thumb_container1"><img  src="images/thumb1.jpg"><img
 
-                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
-
-                 id="thumb1_4"  src="images/thumb4.jpg"></div>
+                 src="images/thumb2.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb4.jpg"></div>
           </a>
           <p>Event Description Here.<br>
-            <a  href="gallery.html">View photos-&gt;</a></p>
+            <a  href="gallery.html">View photos;</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
-            <div  class="round_thumb_container2"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
+            <div  class="round_thumb_container2"><img  src="images/thumb2.jpg"><img
 
-                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
-
-                 id="thumb1_4"  src="images/thumb4.jpg"></div>
+                 src="images/thumb1.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb4.jpg"></div>
           </a>
           <p>Event Description Here.<br>
-            <a  href="gallery.html">View photos-&gt;</a></p>
+            <a  href="gallery.html">View photos;</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
-            <div  class="round_thumb_container3"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
+            <div  class="round_thumb_container3"><img  src="images/thumb3.jpg"><img
 
-                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
-
-                 id="thumb1_4"  src="images/thumb4.jpg"></div>
+                 src="images/thumb2.jpg"><img  src="images/thumb1.jpg"><img  src="images/thumb4.jpg"></div>
           </a>
           <p>Event Description Here.<br>
-            <a  href="gallery.html">View photos-&gt;</a></p>
+            <a  href="gallery.html">View photos;</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
-            <div  class="round_thumb_container4"><img  id="thumb1_1"  src="images/thumb1.jpg"><img
+            <div  class="round_thumb_container4"><img  src="images/thumb4.jpg"><img
 
-                 id="thumb1_2"  src="images/thumb2.jpg"><img  id="thumb1_3"  src="images/thumb3.jpg"><img
-
-                 id="thumb1_4"  src="images/thumb4.jpg"></div>
+                 src="images/thumb2.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb1.jpg"></div>
           </a>
           <p>Event Description Here.<br>
-            <a  href="gallery.html">View photos-&gt;</a></p>
+            <a  href="gallery.html">View photos;</a></p>
         </div>
         <script  type="text/javascript"  src="script.js"></script> </div>
     </div>

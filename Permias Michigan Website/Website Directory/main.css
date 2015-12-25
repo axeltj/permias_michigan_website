@@ -141,16 +141,26 @@ div.event_desc p a:hover {
 	position: relative;
 }
 #home_gallery h3 {
-	margin-top: 30px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+#home_gallery h3 a {
+	font-size: 40px;
+	font-family: Garamond, Georgia, serif;
+	text-decoration: none;
+	color: #282828;
+	text-shadow: 1px 1px #888888;
 }
 #thumbs_section {
+	position: relative;
+	width: 85%;
+	left: 7.5%;
 	padding: 0px;
-	margin-top: 40px;
+	margin-top: 0px;
 	margin-bottom: 40px;
-	width: 100%;
 	height: auto;
 	text-align: justify;
-	border: 1px solid #000000;
+	border: none;
 	-ms-text-justify: distribute-all-lines;
 	text-justify: distribute-all-lines;
 }
@@ -159,7 +169,7 @@ div.event_desc p a:hover {
 	*display: inline;
 	width: 250px;
 	height: auto;
-	border: 1px solid #000000;
+	border: none;
 	overflow: visible;
 	padding: 0px;
 }
@@ -178,9 +188,12 @@ div .round_thumb_container1 {
 	margin-bottom: 0px;
 	width: 200px;
 	height: 200px;
-	border: 1px solid #606060;
+	border: none;
 	border-radius: 100px;
 	overflow: hidden;
+}
+.round_thumb_container1:hover {
+	box-shadow: 3px 5px 15px #888888;
 }
 div .round_thumb_container2 {
 	position: relative;
@@ -190,9 +203,12 @@ div .round_thumb_container2 {
 	margin-bottom: 0px;
 	width: 200px;
 	height: 200px;
-	border: 1px solid #606060;
+	border: none;
 	border-radius: 100px;
 	overflow: hidden;
+}
+.round_thumb_container2:hover {
+	box-shadow: 3px 5px 15px #888888;
 }
 div .round_thumb_container3 {
 	position: relative;
@@ -202,9 +218,12 @@ div .round_thumb_container3 {
 	margin-bottom: 0px;
 	width: 200px;
 	height: 200px;
-	border: 1px solid #606060;
+	border: none;
 	border-radius: 100px;
 	overflow: hidden;
+}
+.round_thumb_container3:hover {
+	box-shadow: 3px 5px 15px #888888;
 }
 div .round_thumb_container4 {
 	position: relative;
@@ -214,9 +233,12 @@ div .round_thumb_container4 {
 	margin-bottom: 0px;
 	width: 200px;
 	height: 200px;
-	border: 1px solid #606060;
+	border: none;
 	border-radius: 100px;
 	overflow: hidden;
+}
+.round_thumb_container4:hover {
+	box-shadow: 3px 5px 15px #888888;
 }
 #thumbs_section img {
 	position: absolute;
