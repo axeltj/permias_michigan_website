@@ -139,6 +139,10 @@ div.event_desc p a:hover {
 	background-color: #f0f0f0;
 	text-align: center;
 	position: relative;
+	/* TODO: Maybe insert background border?
+	background-image: url("images/border_batik_edited3.png");
+	background-size: 100% auto;
+	*/
 }
 #home_gallery h3 {
 	margin-top: 40px;
