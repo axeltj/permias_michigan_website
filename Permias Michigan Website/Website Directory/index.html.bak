@@ -152,7 +152,7 @@ $(document).on("scroll",function(){
                  src="images/thumb2.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb4.jpg"></div>
           </a>
           <p>Event Description Here.<br>
-            <a  href="gallery.html">View photos;</a></p>
+            <a  href="gallery.html">View photos</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
             <div  class="round_thumb_container2"><img  src="images/thumb2.jpg"><img
@@ -160,7 +160,7 @@ $(document).on("scroll",function(){
                  src="images/thumb1.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb4.jpg"></div>
           </a>
           <p>Event Description Here.<br>
-            <a  href="gallery.html">View photos;</a></p>
+            <a  href="gallery.html">View photos</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
             <div  class="round_thumb_container3"><img  src="images/thumb3.jpg"><img
@@ -168,7 +168,7 @@ $(document).on("scroll",function(){
                  src="images/thumb2.jpg"><img  src="images/thumb1.jpg"><img  src="images/thumb4.jpg"></div>
           </a>
           <p>Event Description Here.<br>
-            <a  href="gallery.html">View photos;</a></p>
+            <a  href="gallery.html">View photos</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
             <div  class="round_thumb_container4"><img  src="images/thumb4.jpg"><img
@@ -176,14 +176,29 @@ $(document).on("scroll",function(){
                  src="images/thumb2.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb1.jpg"></div>
           </a>
           <p>Event Description Here.<br>
-            <a  href="gallery.html">View photos;</a></p>
+            <a  href="gallery.html">View photos</a></p>
         </div>
         <script  type="text/javascript"  src="script.js"></script> </div>
     </div>
     <div  id="home_hr_container">
       <hr> </div>
     <div  id="home_contacts">
-      <h4>Any questions? Concerns? Contact Us!</h4>
+      <div  id="table_container">
+        <table>
+          <tbody>
+            <tr>
+              <th>Header1</th>
+              <th>Header2</th>
+              <th>Header3</th>
+            </tr>
+            <tr>
+              <td>Data1</td>
+              <td>Data2</td>
+              <td>Data3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     
   </body>

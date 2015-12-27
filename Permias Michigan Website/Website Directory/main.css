@@ -290,8 +290,17 @@ div .round_thumb_container4 {
 	background-color: #f0f0f0;
 	width: 100%;
 	height: auto;
+	margin: 0px;
 }
-
+#home_contacts #table_container {
+	position: relative;
+	width: 80%;
+	height: auto;
+	margin: 50px auto 40px 10%;
+}
+#table_container table {
+	width: 100%;
+}
 
 
 /*
