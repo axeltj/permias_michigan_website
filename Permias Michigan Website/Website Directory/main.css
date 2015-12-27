@@ -1,6 +1,7 @@
 body {
 	background-color: #d7d7d7;
-	margin:0;
+	margin: 0;
+	padding: 0;
 }
 body:after {
 	content: '';
@@ -379,9 +380,9 @@ div .round_thumb_container4 {
 	-o-box-shadow: 0px -2px 4px 2px #888888;
 }
 
-#ft {
-	margin: 0px;
-	clear: both;
+#copyright {
+	margin: 0;
+	padding: 0;
 	float: left;
 	width: 100%;
 	height: auto;
@@ -392,21 +393,27 @@ div .round_thumb_container4 {
 	z-index: 99;
 	background: rgb(0,0,0);
 	background: rgba(0,0,0,0.6);
-	padding-left: 10px;
-	padding-top: 5px;
-	padding-bottom: 10px;
+}
+#copyright p {
+	margin: 10px;
 }
 
 /*
 ================ About Us Text ================
 
-PERMIAS (Persatuan Mahasiswa Indonesia di Amerika Serikat) MICHIGAN is an organization that unites the Indonesian community in the Ann Arbor and Ypsilanti area through different annual events and competitions.
+PERMIAS (Persatuan Mahasiswa Indonesia di Amerika Serikat) Michigan
+is an organization that unites the Indonesian community in
+the Ann Arbor and Ypsilanti area through various annual events and competitions.
 
-This organization includes current students, alumni, and prospective students of the University of Michigan, Eastern Michigan University, Washtenaw Community College as well as Indonesian families that are living in Michigan.
+This organization includes current students, alumni, and prospective students of
+the University of Michigan, Eastern Michigan University, Washtenaw Community College
+as well as Indonesian families that are living in Michigan.
 
-You don't have to be Indonesian to be a part of our group! Invite any of your friends who might be interested in the Indonesian community!
+You don't have to be Indonesian to be a part of our group!
+Invite any of your friends who might be interested in the Indonesian community!
 
-Please do not hesitate to contact any of our admins for inquiries or information. We'll do our best to help you as each and every one of you is important to us!
+Please do not hesitate to contact any of our board members for inquiries or information.
+We'll do our best to help you as each and every one of you is important to us!
 
 GO BLUE!
 */
