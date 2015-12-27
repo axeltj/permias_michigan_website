@@ -219,7 +219,7 @@ $(document).on("scroll",function(){
         </table>
       </div>
     </div>
+    <div id="last_border"></div>
     <div  id="ft">Copyright© Permias Michigan 2015. Website by Christian Axel</div>
-    
   </body>
 </html>

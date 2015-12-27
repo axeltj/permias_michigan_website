@@ -327,6 +327,9 @@ div .round_thumb_container4 {
 	font-weight: bold;
 	color: #404040;
 	border-bottom: 1px solid #404040;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 	padding-bottom: 5px;
 	padding-left: 0px;
 	box-shadow: 0px 4px 2px -2px #888888;
@@ -343,6 +346,7 @@ div .round_thumb_container4 {
 	padding-bottom: 0px;
 	padding-left: 0px;
 	vertical-align: top;
+	border: none;
 }
 #table_container td img {
 	width: 50px;
@@ -359,18 +363,37 @@ div .round_thumb_container4 {
 	text-decoration: underline;
 }
 
+#last_border {
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 3px;
+	margin: 0px;
+	background-image: url("images/last_border.png");
+	background-size: 100%;
+	overflow: hidden;
+	z-index: 100;
+	box-shadow: 0px -2px 4px 2px #888888;
+	-webkit-box-shadow: 0px -2px 4px 2px #888888;
+	-moz-box-shadow: 0px -2px 4px 2px #888888;
+	-o-box-shadow: 0px -2px 4px 2px #888888;
+}
+
 #ft {
+	margin: 0px;
 	clear: both;
 	float: left;
 	width: 100%;
 	height: auto;
 	font-size: 15px;
 	font-family: Verdana, Tahoma, Helvetica;
-	color: #000000;
+	color: #f0f0f0;
 	text-align: left;
 	z-index: 99;
-	background: #f0f0f0;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.6);
 	padding-left: 10px;
+	padding-top: 5px;
 	padding-bottom: 10px;
 }
 
