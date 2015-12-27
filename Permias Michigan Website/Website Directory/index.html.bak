@@ -212,12 +212,14 @@ $(document).on("scroll",function(){
                 <a  href="https://www.facebook.com/permias.michigan/"><img  src="images/facebook_icon_64.png"></a>
                 <a  href="https://www.instagram.com/permiasmichigan/"><img  src="images/instagram_icon_64.png"></a>
               </td>
-              <td><a  href="contacts.html">Click here</a> to view photos of each of our board members and find out how to
-                contact them.</td>
+              <td><a  href="contacts.html">Click here</a> to find out how to
+                contact each of our current board members.</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
+    <div  id="ft">Copyright© Permias Michigan 2015. Website by Christian Axel</div>
+    
   </body>
 </html>

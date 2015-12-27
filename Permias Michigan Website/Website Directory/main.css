@@ -30,6 +30,10 @@ hr {
 	width: 95%;
 	border: 0.5px inset #686868;
 	z-index: 99;
+	box-shadow: 0px 2px 3px 1px #888888;
+	-webkit-box-shadow: 0px 2px 3px 1px #888888;
+	-moz-box-shadow: 0px 2px 3px 1px #888888;
+	-o-box-shadow: 0px 2px 3px 1px #888888;
 }
 
 #about-us {
@@ -216,6 +220,9 @@ div .round_thumb_container1 {
 }
 .round_thumb_container1:hover {
 	box-shadow: 3px 5px 15px #888888;
+	-webkit-box-shadow: 3px 5px 15px #888888;
+	-moz-box-shadow: 3px 5px 15px #888888;
+	-o-box-shadow: 3px 5px 15px #888888;
 }
 div .round_thumb_container2 {
 	position: relative;
@@ -231,6 +238,9 @@ div .round_thumb_container2 {
 }
 .round_thumb_container2:hover {
 	box-shadow: 3px 5px 15px #888888;
+	-webkit-box-shadow: 3px 5px 15px #888888;
+	-moz-box-shadow: 3px 5px 15px #888888;
+	-o-box-shadow: 3px 5px 15px #888888;
 }
 div .round_thumb_container3 {
 	position: relative;
@@ -246,6 +256,9 @@ div .round_thumb_container3 {
 }
 .round_thumb_container3:hover {
 	box-shadow: 3px 5px 15px #888888;
+	-webkit-box-shadow: 3px 5px 15px #888888;
+	-moz-box-shadow: 3px 5px 15px #888888;
+	-o-box-shadow: 3px 5px 15px #888888;
 }
 div .round_thumb_container4 {
 	position: relative;
@@ -261,6 +274,9 @@ div .round_thumb_container4 {
 }
 .round_thumb_container4:hover {
 	box-shadow: 3px 5px 15px #888888;
+	-webkit-box-shadow: 3px 5px 15px #888888;
+	-moz-box-shadow: 3px 5px 15px #888888;
+	-o-box-shadow: 3px 5px 15px #888888;
 }
 #thumbs_section img {
 	position: absolute;
@@ -296,7 +312,7 @@ div .round_thumb_container4 {
 	position: relative;
 	width: 85%;
 	height: auto;
-	margin: 50px auto 40px 7.5%;
+	margin: 80px auto 50px 7.5%;
 }
 #table_container table {
 	width: 100%;
@@ -313,6 +329,10 @@ div .round_thumb_container4 {
 	border-bottom: 1px solid #404040;
 	padding-bottom: 5px;
 	padding-left: 0px;
+	box-shadow: 0px 4px 2px -2px #888888;
+	-webkit-box-shadow: 0px 4px 2px -2px #888888;
+	-moz-box-shadow: 0px 4px 2px -2px #888888;
+	-o-box-shadow: 0px 4px 2px -2px #888888;
 }
 #table_container td {
 	font-size: 18px;
@@ -339,18 +359,24 @@ div .round_thumb_container4 {
 	text-decoration: underline;
 }
 
-/*
 #ft {
-	position: absolute;
 	clear: both;
-	font-size: 13px;
+	float: left;
+	width: 100%;
+	height: auto;
+	font-size: 15px;
 	font-family: Verdana, Tahoma, Helvetica;
 	color: #000000;
+	text-align: left;
 	z-index: 99;
+	background: #f0f0f0;
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
-*/
 
 /*
+================ About Us Text ================
+
 PERMIAS (Persatuan Mahasiswa Indonesia di Amerika Serikat) MICHIGAN is an organization that unites the Indonesian community in the Ann Arbor and Ypsilanti area through different annual events and competitions.
 
 This organization includes current students, alumni, and prospective students of the University of Michigan, Eastern Michigan University, Washtenaw Community College as well as Indonesian families that are living in Michigan.
