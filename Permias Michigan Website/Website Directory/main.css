@@ -14,6 +14,23 @@ body:after {
 	background-image: url("images/background.jpg");
 	background-size: cover;
 }
+#home_hr_container {
+	float: left;
+	background-color: #f0f0f0;
+	width: 100%;
+	margin: 0px;
+	border: none;
+	z-index: 99;
+}
+hr {
+	position: absolute;
+	display: block;
+	left: 2.5%;
+	margin: 0px auto 0px auto;
+	width: 95%;
+	border: 0.5px inset #686868;
+	z-index: 99;
+}
 
 #about-us {
 	float: left;
@@ -156,6 +173,7 @@ div.event_desc p a:hover {
 	text-shadow: 1px 1px #888888;
 }
 #thumbs_section {
+	background: rgba(0,0,0,0);
 	position: relative;
 	width: 85%;
 	left: 7.5%;
@@ -267,6 +285,12 @@ div .round_thumb_container4 {
 	color: #707070;
 }
 
+#home_contacts {
+	float: left;
+	background-color: #f0f0f0;
+	width: 100%;
+	height: auto;
+}
 
 
 

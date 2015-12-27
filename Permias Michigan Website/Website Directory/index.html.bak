@@ -180,5 +180,11 @@ $(document).on("scroll",function(){
         </div>
         <script  type="text/javascript"  src="script.js"></script> </div>
     </div>
+    <div  id="home_hr_container">
+      <hr> </div>
+    <div  id="home_contacts">
+      <h4>Any questions? Concerns? Contact Us!</h4>
+    </div>
+    
   </body>
 </html>
