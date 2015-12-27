@@ -93,9 +93,9 @@ $(document).on("scroll",function(){
       <script  type="text/javascript"  src="engine0/script.js"></script> </div>
     <!-- End SLIDER BODY section -->
     <!--START CONTENT-->
-    <div  id="about-us"> <img  id="separator"  src="images/about_us_separator_l_s.png">
+    <div  id="about-us"> <img  id="separator"  src="images/about_us_separator_l_s.png" alt="">
       <h1>About Us</h1>
-      <img  id="separator"  src="images/about_us_separator_r_s.png">
+      <img  id="separator"  src="images/about_us_separator_r_s.png" alt="">
       <p>PERMIAS (Persatuan Mahasiswa Indonesia di Amerika Serikat) Michigan<br>
         is an organization that unites the Indonesian community in<br>
         the Ann Arbor and Ypsilanti area through various annual events and
@@ -148,33 +148,33 @@ $(document).on("scroll",function(){
       <h3><a  href="gallery.html">Check out our past events in the Gallery!</a></h3>
       <div  id="thumbs_section">
         <div  id="thumb_container"><a  href="gallery.html">
-            <div  class="round_thumb_container1"><img  src="images/thumb1.jpg"><img
+            <div  class="round_thumb_container1"><img  src="images/thumb1.jpg" alt="thumbnail"><img
 
-                 src="images/thumb2.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb4.jpg"></div>
+                 src="images/thumb2.jpg" alt="thumbnail"><img  src="images/thumb3.jpg" alt="thumbnail"><img  src="images/thumb4.jpg" alt="thumbnail"></div>
           </a>
           <p>Event Description Here.<br>
             <a  href="gallery.html">View photos</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
-            <div  class="round_thumb_container2"><img  src="images/thumb2.jpg"><img
+            <div  class="round_thumb_container2"><img  src="images/thumb2.jpg" alt="thumbnail"><img
 
-                 src="images/thumb1.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb4.jpg"></div>
+                 src="images/thumb1.jpg" alt="thumbnail"><img  src="images/thumb3.jpg" alt="thumbnail"><img  src="images/thumb4.jpg" alt="thumbnail"></div>
           </a>
           <p>Event Description Here.<br>
             <a  href="gallery.html">View photos</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
-            <div  class="round_thumb_container3"><img  src="images/thumb3.jpg"><img
+            <div  class="round_thumb_container3"><img  src="images/thumb3.jpg" alt="thumbnail"><img
 
-                 src="images/thumb2.jpg"><img  src="images/thumb1.jpg"><img  src="images/thumb4.jpg"></div>
+                 src="images/thumb2.jpg" alt="thumbnail"><img  src="images/thumb1.jpg" alt="thumbnail"><img  src="images/thumb4.jpg" alt="thumbnail"></div>
           </a>
           <p>Event Description Here.<br>
             <a  href="gallery.html">View photos</a></p>
         </div>
         <div  id="thumb_container"><a  href="gallery.html">
-            <div  class="round_thumb_container4"><img  src="images/thumb4.jpg"><img
+            <div  class="round_thumb_container4"><img  src="images/thumb4.jpg" alt="thumbnail"><img
 
-                 src="images/thumb2.jpg"><img  src="images/thumb3.jpg"><img  src="images/thumb1.jpg"></div>
+                 src="images/thumb2.jpg" alt="thumbnail"><img  src="images/thumb3.jpg" alt="thumbnail"><img  src="images/thumb1.jpg" alt="thumbnail"></div>
           </a>
           <p>Event Description Here.<br>
             <a  href="gallery.html">View photos</a></p>
@@ -209,8 +209,11 @@ $(document).on("scroll",function(){
                 We are active on Facebook and Instagram, and we update the
                 website every week! <br>
                 <br>
-                <a  href="https://www.facebook.com/permias.michigan/"><img  src="images/facebook_icon_64.png"></a>
-                <a  href="https://www.instagram.com/permiasmichigan/"><img  src="images/instagram_icon_64.png"></a>
+                Become a Permias member and get discounts to various shops and
+                restaurants!<br>
+                <br>
+                <a  href="https://www.facebook.com/permias.michigan/"><img  src="images/facebook_icon_64.png" alt="facebook_icon"></a>
+                <a  href="https://www.instagram.com/permiasmichigan/"><img  src="images/instagram_icon_64.png" alt="instagram_icon"></a>
               </td>
               <td><a  href="contacts.html">Click here</a> to find out how to
                 contact each of our current board members.</td>
@@ -219,7 +222,8 @@ $(document).on("scroll",function(){
         </table>
       </div>
     </div>
-    <div id="last_border"></div>
+    <div  id="last_border"> </div>
     <div  id="ft">Copyright© Permias Michigan 2015. Website by Christian Axel</div>
+    
   </body>
 </html>
