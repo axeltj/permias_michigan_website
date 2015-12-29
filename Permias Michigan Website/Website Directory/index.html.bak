@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta  content="text/html; charset=utf-8"  http-equiv="content-type">
-    <title>PERMIAS Michigan</title>
+    <title>Permias Michigan - Home</title>
     <!--stylesheet for menubar-->
     <link  rel="stylesheet"  type="text/css"  href="menubar.css">
     <!--main stylesheet-->
@@ -159,7 +159,7 @@ $(document).on("scroll",function(){
           <p>Event Description Here.<br>
             <a  href="gallery.html">View photos</a></p>
         </div>
-        <div  id="thumb_container"><a  href="gallery.html"> 
+        <div  id="thumb_container"><a  href="gallery.html">
             <div  class="round_thumb_container2"><img  src="images/thumb2.jpg"  alt="thumbnail"><img
 
                  src="images/thumb1.jpg"  alt="thumbnail"><img  src="images/thumb3.jpg"
@@ -227,7 +227,7 @@ $(document).on("scroll",function(){
                      src="images/facebook_icon_50.png"  alt="facebook_icon"></a>
                 <a  href="https://www.instagram.com/permiasmichigan/"  target="_blank"><img
 
-                     src="images/instagram_icon_64.png"  alt="instagram_icon"></a>
+                     src="images/instagram_icon_50.png"  alt="instagram_icon"></a>
               </td>
               <td><a  href="contacts.html">Click here</a> to find out how to
                 contact each of our current board members.</td>

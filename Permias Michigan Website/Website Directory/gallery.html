@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  content="text/html; charset=utf-8"  http-equiv="content-type">
+    <title>Permias Michigan - Gallery</title>
+    <!--stylesheet for menubar-->
+    <link  rel="stylesheet"  type="text/css"  href="menubar.css">
+    <!--main stylesheet-->
+    <link  rel="stylesheet"  type="text/css"  href="gallery-style.css">
+    <meta  content="Christian Axel"  name="author">
+    <meta  content="The Official Permias Michigan Website"  name="description">
+  </head>
+  <body>
+    <header  class="large">
+      <nav> <a  href="index.html"><img  class="navbar_logo"  src="images/permias_logo_yellow_s.png"
+
+             alt="Permias Logo"></a>
+        <ul>
+          <li><a  class="active"  href="index.html">Home</a></li>
+          <li><a  href="gallery.html">Gallery</a></li>
+          <li><a  href="contacts.html">Contact Us</a></li>
+        </ul>
+        <a  href="https://www.facebook.com/permias.michigan/"  target="_blank"><img
+
+             class="facebook_logo"  src="images/facebook_icon_bw_50.png"  alt="facebook_logo"></a>
+        <a  href="https://www.instagram.com/permiasmichigan/"  target="_blank"><img
+
+             class="instagram_logo"  src="images/instagram_icon_bw_50.png"  alt="instagram_logo"></a>
+      </nav>
+      <script  type="text/javascript">
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>100){
+        $("header").removeClass("large").addClass("small");
+    } else{
+        $("header").removeClass("small").addClass("large");
+    }
+});
+</script> </header> <a  href="#">
+      <div  id="top_button">
+        <p>Back to Top</p>
+      </div>
+    </a>
+    <div id="blank_space"> </div>
+    <div  id="gallery_container">
+      <div  id="event_container">Event1 </div>
+      <div  id="event_container">Event2 </div>
+    </div>
+  </body>
+</html>

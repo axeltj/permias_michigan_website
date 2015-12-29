@@ -6,14 +6,11 @@ header, header a, header img, header ul, header li {
 }
 
 /* Basic layout */
-body{
-	background-color: #FFFFFF;
-}
-ul{
+header ul{
 	list-style-type: none;
 	float: center;
 }
-nav{
+header nav{
 	width: 100%;
 	margin: 0 auto;
 }
