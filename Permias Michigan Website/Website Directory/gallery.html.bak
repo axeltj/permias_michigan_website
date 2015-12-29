@@ -10,6 +10,7 @@
     <meta  content="Christian Axel"  name="author">
     <meta  content="The Official Permias Michigan Website"  name="description">
     <script  type="text/javascript"  src="jquery.js"></script>
+    <script  type="text/javascript"  src="gallery-script.js"></script>
   </head>
   <body>
     <header  class="large">
@@ -38,22 +39,29 @@
     <div  id="gallery_title">Gallery Title</div>
     <div  id="gallery_container">
       <div  id="event_container">
-        <div  id="event_description_container">
+        <div  class="event_description_container"  id="ed1">
           <p>Description1</p>
         </div>
-        <div  id="event_pictures_container">
+        <div  class="event_pictures_container">
           <p>Event1 Pics</p>
         </div>
       </div>
       <div  id="event_container">
-        <div  id="event_description_container">
+        <div  class="event_description_container"  id="ed2">
           <p>Description2</p>
         </div>
-        <div  id="event_pictures_container">
+        <div  class="event_pictures_container">
           <p>Event2 Pics</p>
         </div>
       </div>
+      <div  id="event_container">
+        <div  class="event_description_container"  id="ed3">
+          <p>Description3</p>
+        </div>
+        <div  class="event_pictures_container">
+          <p>Event3 Pics</p>
+        </div>
+      </div>
     </div>
-    
   </body>
 </html>
