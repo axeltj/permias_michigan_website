@@ -5,7 +5,7 @@
     <title>Permias Michigan - Gallery</title>
     <!--stylesheet for menubar-->
     <link  rel="stylesheet"  type="text/css"  href="menubar-style.css">
-    <!--main stylesheet-->
+    <!--gallery stylesheet-->
     <link  rel="stylesheet"  type="text/css"  href="gallery-style.css">
     <meta  content="Christian Axel"  name="author">
     <meta  content="The Official Permias Michigan Website"  name="description">
@@ -38,14 +38,44 @@
     <div  id="blank_space"> </div>
     <div  id="gallery_title">Gallery Title</div>
     <div  id="gallery_container">
+      <!--EVENT 1-->
       <div  id="event_container">
         <div  class="event_description_container"  id="ed1">
           <p>Description1</p>
         </div>
         <div  class="event_pictures_container">
           <p>Event1 Pics</p>
+          <div  id="thumb_container">
+            <div  id="thumb_picture_container"  class="small"> <img  src="images/thumbs/thumb1.jpg"
+
+                 alt="thumbnail"> </div>
+          </div>
+          <div  id="thumb_container">
+            <div  id="thumb_picture_container"  class="small"> <img  src="images/thumbs/thumb2.jpg"
+
+                 alt="thumbnail"> </div>
+          </div>
+          <div  id="thumb_container">
+            <div  id="thumb_picture_container"  class="small"> <img
+
+                 src="images/thumbs/thumb3.jpg"  alt="thumbnail"> </div>
+          </div>
+          <div  id="thumb_container">
+            <div  id="thumb_picture_container"  class="small"> <img  src="images/thumbs/thumb4.jpg"
+
+                 alt="thumbnail"> </div>
+          </div>
         </div>
+        <!--
+        <script  type="text/javascript">
+        	$("#thumb_picture_container").click(function(){
+        		$(this).addClass("large");
+            $("#overlay").removeClass("hideoverlay").addClass("viewoverlay");
+					});
+        </script>
+-->
       </div>
+      <!--EVENT 2-->
       <div  id="event_container">
         <div  class="event_description_container"  id="ed2">
           <p>Description2</p>
@@ -54,6 +84,7 @@
           <p>Event2 Pics</p>
         </div>
       </div>
+      <!--EVENT 3-->
       <div  id="event_container">
         <div  class="event_description_container"  id="ed3">
           <p>Description3</p>
@@ -63,5 +94,9 @@
         </div>
       </div>
     </div>
+    <div  id="copyright">
+      <p>Copyright© Permias Michigan 2015. Website by Christian Axel</p>
+    </div>
+    <div  id="overlay"  class="hideoverlay"> </div>
   </body>
 </html>

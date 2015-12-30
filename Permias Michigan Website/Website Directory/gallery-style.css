@@ -2,6 +2,8 @@ body {
   background-color: #d7d7d7;
   margin:0;
   padding:0;
+  width: 100%;
+  height: 100%;
 }
 body:after {
   content: '';
@@ -48,13 +50,13 @@ body:after {
   margin-left: 10%;
   background-color: #f0f0f0;
 }
-#gallery_container {
+#gallery_container { /* Contains all pictures of all events */
   width: 80%;
   height: auto;
   margin-left: 10%;
   background-color: #f0f0f0;
 }
-#event_container {
+#event_container { /* Contains description and all picture of that event */
   position: relative;
   width: 100%;
   height: 1000px;
@@ -62,21 +64,22 @@ body:after {
   border: 1px solid #000000;
   margin: 0;
 }
-#event_container .event_pictures_container {
+#event_container .event_pictures_container { /* Contains only pictures */
   position: absolute;
   right: 0;
   top: 0;
   margin-left: 20%;
+  padding: 0;
   width: 80%;
   height: 100%;
   background: rgba(0,0,0,0);
   border: 1px solid #000000;
+  text-align: center;
 }
-
 /* Every event description has this class.
   z-index of every instance is different.
   Each instance is differentiated by id #edN */
-.event_description_container {
+#event_container .event_description_container {
   width: 20%; /* 20% of event_container */
   height: 100px; /* MUST BE A FIXED HEIGHT */
   margin: 0px;
@@ -97,6 +100,71 @@ body:after {
 }
 .event_description_container #ed3 {
   z-index: 3;
+}
+
+#thumb_container { /* Size will stay fixed. Contains each separate image */
+  display: inline-block;
+  width: 180px;
+  height: 120px;
+  margin: 5px;
+}
+#thumb_picture_container {
+  overflow: hidden;
+}
+#thumb_picture_container img {
+  margin: 0;
+  width: auto;
+  height: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+#thumb_picture_container.small { /* Will be removed and added */
+  width: 180px;
+  height: 120px;
+  position: static;
+  margin: 0;
+  padding: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0);
+  border: 2px solid #000000;
+}
+#thumb_picture_container.large {
+  position: fixed;
+  height: 80%;
+  width: auto;
+  max-width: 80%;
+  left: 10%;
+  top: 10%;
+  margin: 0;
+  padding: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0);
+  border: 2px solid #000000;
+  z-index: 103;
+}
+
+#overlay { /* Dark baackground for image view */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.5);
+}
+#overlay.hideoverlay {
+  opacity: 0;
+  z-index: -2;
+}
+#overlay.viewoverlay {
+  opacity: 1;
+  z-index: 102;
 }
 
 

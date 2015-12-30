@@ -1,5 +1,6 @@
 $(function() { // document ready
 
+	/* EVENT DESCRIPTION SCROLL */
 	if (!!$('.event_description_container').offset()) { // make sure .event_description_container exists
 
 		// TODO: if adding event descriptions, add ID to IDs and div's Top position to Tops
@@ -24,5 +25,12 @@ $(function() { // document ready
 			}
 		});
 	}
+
+	/* THUMBNAIL PREVIEW*/
+	$("#thumb_picture_container").click(function(){
+    	$(this).addClass("large");
+        $("#overlay").removeClass("hideoverlay").addClass("viewoverlay");
+	});
+
 
 })
