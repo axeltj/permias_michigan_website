@@ -17,10 +17,10 @@ $(function() { // document ready
 			// update all event_description_containers
 			for (i = 0; i < IDs.length; i++) {
 				if (Tops[i] < windowTop) { // windowTop is below div's top position
-					$(IDs[i]).css({ position: 'fixed', width: '16%', left: '10%', top: '45px' });
+					$(IDs[i]).css({ position: 'fixed', width: '16%', height: '100px', left: '10%', top: '45px' });
 				}
 				else {
-					$(IDs[i]).css({ position: 'absolute', width: '20%', left: '0', top: '0' });
+					$(IDs[i]).css({ position: 'absolute', width: '20%', height: '100%', left: '0', top: '0' });
 				}
 			}
 		});
