@@ -49,12 +49,22 @@ body:after {
   height: auto;
   margin-left: 10%;
   background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#gallery_title p {
+  font-family: Georgia, Garamond, serif;
+  font-size: 30px;
+  margin: 0;
 }
 #gallery_container { /* Contains all events */
   width: 80%;
   height: auto;
   margin-left: 10%;
-  background-color: #f0f0f0;
+  background-image: url("images/batik-background.jpg");
+  background-repeat: repeat;
+  border: none;
 }
 
 #event_container { /* Contains description and all pictures of that event */
@@ -62,18 +72,22 @@ body:after {
   width: 100%;
   height: auto;
   background: rgba(0,0,0,0);
-  border: 1px solid #000000;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
   margin: 0;
 }
 /* Event pictures container is static margined to the right, while event description is absolute and fixed */
 #event_container .event_pictures_container { /* Contains only pictures */
   margin: 0 0 0 20%;
-  padding: 0 0 45px 0;
+  padding-top: 0px;
+  padding-bottom: 45px;
   width: 80%;
   height: auto;
-  background: rgba(0,0,0,0);
   border: 1px solid #000000;
   text-align: center;
+  background: rgba(0,0,0,0.9);
+  z-index: 1;
+  box-shadow: -6px 0px 5px #080808;
 }
 /* Every event description has this class.
   z-index of every instance is different.
@@ -82,12 +96,13 @@ body:after {
   width: 20%; /* 20% of event_container */
   height: 100px; /* MUST BE A FIXED HEIGHT */
   margin: 0px;
-  border: 1px solid #b0b0b0;
+  border: none;
   background-color: #e0e0e0;
   /* Position when absolute */
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2; /* overlaps event_pictures_container */
   /* Position when fixed:
   top: 45px;
   left: 10%;
@@ -112,7 +127,7 @@ body:after {
   height: 120px;
   margin: 30px 5px 0px 5px;
   position: relative;
-  border: 1px solid #000000;
+  border: 1px solid #383838;
 }
 
 .thumb_picture_container {
