@@ -102,25 +102,27 @@ body:after {
   z-index: 3;
 }
 
-#thumb_container { /* Size will stay fixed. Contains each separate image */
+#thumb_container { /* SIZE MUST STAY FIXED. Contains each separate image */
   display: inline-block;
   width: 180px;
   height: 120px;
   margin: 5px;
+  position: relative;
 }
-#thumb_picture_container {
+
+.thumb_picture_container {
   overflow: hidden;
 }
-#thumb_picture_container img {
+.thumb_picture_container img {
   margin: 0;
   width: auto;
-  height: 100%;
+  height: 100%; /* THUMB IMAGES ARE FITTED BY HEIGHT */
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-#thumb_picture_container.small { /* Will be removed and added */
+.thumb_picture_container#small { /* Will be removed and added */
   width: 180px;
   height: 120px;
   position: static;
@@ -128,24 +130,50 @@ body:after {
   padding: 0;
   background: rgb(0,0,0);
   background: rgba(0,0,0,0);
-  border: 2px solid #000000;
+  border: 1px solid #000000;
 }
-#thumb_picture_container.large {
+.thumb_picture_container#small:after { /* for hover overlay */
+  cursor: pointer;
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  background-image: url("images/thumbs/zoom_w_180x120.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.thumb_picture_container#small:hover:after {
+  opacity: 1;
+}
+.thumb_picture_container#large {
   position: fixed;
   height: 80%;
   width: auto;
   max-width: 80%;
-  left: 10%;
-  top: 10%;
+  left: 50%;
+  top: 50%;
   margin: 0;
   padding: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   background: rgb(0,0,0);
   background: rgba(0,0,0,0);
   border: 2px solid #000000;
   z-index: 103;
 }
 
-#overlay { /* Dark baackground for image view */
+#overlay { /* Dark baackground for large image view */
   position: fixed;
   top: 0;
   left: 0;

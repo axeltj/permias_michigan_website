@@ -191,6 +191,14 @@ div.event_desc p a:hover {
 	-ms-text-justify: distribute-all-lines;
 	text-justify: distribute-all-lines;
 }
+#thumbs_section:after { /* Even spread of thumb_containers */
+	content:'';
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+}
+
 #thumb_container { /*contains round thumb and description*/
 	display: inline-block;
 	*display: inline;
@@ -200,14 +208,7 @@ div.event_desc p a:hover {
 	overflow: visible;
 	padding: 0px;
 }
-#thumbs_section:after {
-	content:'';
-	width: 100%;
-	display: inline-block;
-	font-size: 0;
-	line-height: 0;
-}
-div .round_thumb_container1 {
+div .round_thumb_container1 { /* Holds each img */
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;

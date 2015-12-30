@@ -13,20 +13,19 @@
     <script  type="text/javascript"  src="gallery-script.js"></script>
   </head>
   <body>
+    <!-- NOTES: Thumbnails are fitted by height. (Width is always 250px).
+				When Adding thumbnails, be sure to also add the data-large-img-src and data-small-img-src attributes				EACH thumb_container contains ONE thumbnail -->
     <header  class="large">
-      <nav> <a  href="index.html"><img  class="navbar_logo"  src="images/permias_logo_yellow_s.png"
-
+      <nav> <a  href="index.html"><img  class="navbar_logo"  src="images/permias_logo_yellow_s.png"
              alt="Permias Logo"></a>
         <ul>
           <li><a  href="index.html">Home</a></li>
           <li><a  class="active"  href="gallery.html">Gallery</a></li>
           <li><a  href="contacts.html">Contact Us</a></li>
         </ul>
-        <a  href="https://www.facebook.com/permias.michigan/"  target="_blank"><img
-
+        <a  href="https://www.facebook.com/permias.michigan/"  target="_blank"><img
              class="facebook_logo"  src="images/facebook_icon_bw_50.png"  alt="facebook_logo"></a>
-        <a  href="https://www.instagram.com/permiasmichigan/"  target="_blank"><img
-
+        <a  href="https://www.instagram.com/permiasmichigan/"  target="_blank"><img
              class="instagram_logo"  src="images/instagram_icon_bw_50.png"  alt="instagram_logo"></a>
       </nav>
       <script  type="text/javascript"  src="menubar_script.js">
@@ -46,34 +45,26 @@
         <div  class="event_pictures_container">
           <p>Event1 Pics</p>
           <div  id="thumb_container">
-            <div  id="thumb_picture_container"  class="small"> <img  src="images/thumbs/thumb1.jpg"
-
-                 alt="thumbnail"> </div>
+            <div  class="thumb_picture_container"  id="small"> <img  src="images/thumbs/thumb1.jpg"
+                 alt="thumbnail"  data-large-img-src="images/thumbs/thumb1_L.jpg"
+                 data-small-img-src="images/thumbs/thumb1.jpg"> </div>
           </div>
           <div  id="thumb_container">
-            <div  id="thumb_picture_container"  class="small"> <img  src="images/thumbs/thumb2.jpg"
-
-                 alt="thumbnail"> </div>
+            <div  class="thumb_picture_container"  id="small"> <img  src="images/thumbs/thumb2.jpg"
+                 alt="thumbnail"  data-large-img-src="images/thumbs/thumb2_L.jpg"
+                 data-small-img-src="images/thumbs/thumb2.jpg"> </div>
           </div>
           <div  id="thumb_container">
-            <div  id="thumb_picture_container"  class="small"> <img
-
-                 src="images/thumbs/thumb3.jpg"  alt="thumbnail"> </div>
+            <div  class="thumb_picture_container"  id="small"> <img  src="images/thumbs/thumb3.jpg"
+                 alt="thumbnail"  data-large-img-src="images/thumbs/thumb3_L.jpg"
+                 data-small-img-src="images/thumbs/thumb3.jpg"> </div>
           </div>
           <div  id="thumb_container">
-            <div  id="thumb_picture_container"  class="small"> <img  src="images/thumbs/thumb4.jpg"
-
-                 alt="thumbnail"> </div>
+            <div  class="thumb_picture_container"  id="small"> <img  src="images/thumbs/thumb4.jpg"
+                 alt="thumbnail"  data-large-img-src="images/thumbs/thumb4_L.jpg"
+                 data-small-img-src="images/thumbs/thumb4.jpg"> </div>
           </div>
         </div>
-        <!--
-        <script  type="text/javascript">
-        	$("#thumb_picture_container").click(function(){
-        		$(this).addClass("large");
-            $("#overlay").removeClass("hideoverlay").addClass("viewoverlay");
-					});
-        </script>
--->
       </div>
       <!--EVENT 2-->
       <div  id="event_container">
@@ -82,6 +73,26 @@
         </div>
         <div  class="event_pictures_container">
           <p>Event2 Pics</p>
+          <div  id="thumb_container">
+            <div  class="thumb_picture_container"  id="small"> <img  src="images/thumbs/thumb1.jpg"
+                 alt="thumbnail"  data-large-img-src="images/thumbs/thumb1_L.jpg"
+                 data-small-img-src="images/thumbs/thumb1.jpg"> </div>
+          </div>
+          <div  id="thumb_container">
+            <div  class="thumb_picture_container"  id="small"> <img  src="images/thumbs/thumb2.jpg"
+                 alt="thumbnail"  data-large-img-src="images/thumbs/thumb2_L.jpg"
+                 data-small-img-src="images/thumbs/thumb2.jpg"> </div>
+          </div>
+          <div  id="thumb_container">
+            <div  class="thumb_picture_container"  id="small"> <img  src="images/thumbs/thumb3.jpg"
+                 alt="thumbnail"  data-large-img-src="images/thumbs/thumb3_L.jpg"
+                 data-small-img-src="images/thumbs/thumb3.jpg"> </div>
+          </div>
+          <div  id="thumb_container">
+            <div  class="thumb_picture_container"  id="small"> <img  src="images/thumbs/thumb4.jpg"
+                 alt="thumbnail"  data-large-img-src="images/thumbs/thumb4_L.jpg"
+                 data-small-img-src="images/thumbs/thumb4.jpg"> </div>
+          </div>
         </div>
       </div>
       <!--EVENT 3-->
