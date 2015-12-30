@@ -70,6 +70,10 @@ body:after {
   background-image: url("images/batik-background.jpg");
   background-repeat: repeat;
   border: none;
+  box-shadow: 0px 0px 10px 10px #080808;
+  -webkit-box-shadow: 0px 0px 10px 10px #080808;
+  -moz-box-shadow: 0px 0px 10px 10px #080808;
+  -o-box-shadow: 0px 0px 10px 10px #080808;
 }
 
 #event_container { /* Contains description and all pictures of that event */
@@ -77,8 +81,7 @@ body:after {
   width: 100%;
   height: auto;
   background: rgba(0,0,0,0.7);
-  border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #404040;
   margin: 0;
 }
 /* Event pictures container is static margined to the right, while event description is absolute and fixed */
@@ -87,10 +90,9 @@ body:after {
   padding: 0px 0px 45px 0px;
   width: 80%;
   height: auto;
-  border: 1px solid #000000;
+  border-left: 1px solid #303030;
   text-align: center;
   z-index: 1;
-  box-shadow: -6px 0px 5px #080808;
 }
 /* Every event description has this class.
   z-index of every instance is different.
@@ -99,15 +101,10 @@ body:after {
   width: 20%; /* 20% of event_container */
   height: 100%; /* FIXED VERSION MUST BE A FIXED HEIGHT */
   margin: 0px;
+  padding: 5px;
   border-radius: 0px 0px 10px 10px;
   text-align: left;
-  background-color: #202020;
-  /* TODO: Optional box shadow
-  box-shadow: 6px 6px 5px #080808;
-  -webkit-box-shadow: 6px 6px 5px #080808;
-  -moz-box-shadow: 6px 6px 5px #080808;
-  -o-box-shadow: 6px 6px 5px #080808;
-  */
+  background-color: #b8b8b8;
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
@@ -125,9 +122,16 @@ body:after {
   */
 }
 .event_description_container p {
-  color: #a0a0a0;
+  color: #181818;
   margin: 0;
   font-size: 15px;
+  font-family: Georgia, Garamond, 'Book Antiqua', serif;
+}
+.event_description_container p.title {
+  color: #181818;
+  margin: 0;
+  font-size: 20px;
+  text-decoration: underline;
   font-family: Georgia, Garamond, 'Book Antiqua', serif;
 }
 /* TODO: When adding more event descriptions,
