@@ -39,7 +39,7 @@ body:after {
   font-family: Georgia, Garamond, serif;
 }
 
-#blank_space {
+#blank_space { /* Move content down due to menubar */
   height: 88px;
   opacity: 0;
   width: 100%;
@@ -60,15 +60,53 @@ body:after {
   font-family: 'Leckerli One', 'Oleo Script', Georgia, Garamond, 'Book Antiqua', serif;
   font-size: 80px;
   color: #000000;
-  text-shadow: 5px 5px 4px rgba(255,255,255,0.8);
+  text-shadow: 3px 3px 7px #FFFFFF;
   margin: 0;
+  /* Fade in on load */
+  -webkit-filter: blur(0px);
+  -webkit-animation: fadein linear 0.7s;
+  -moz-filter: blur(0px);
+  -moz-animation: fadein linear 0.7s;
+  -o-filter: blur(0px);
+  -o-animation: fadein linear 0.7s;
+  -ms-filter: blur(0px);
+  -ms-animation: fadein linear 0.7s;
+  filter: blur(0px);
+  animation: fadein linear 0.7s;
+}
+@-webkit-keyframes fadein {
+   0% { -webkit-filter: opacity(0%) blur(10px);}
+  50% { -webkit-filter: opacity(90%)  blur(10px);}
+ 100% { -webkit-filter: opacity(100%) blur(0px);}
+}
+@-moz-keyframes fadein {
+   0% { -moz-filter: opacity(0%) blur(10px);}
+  50% { -moz-filter: opacity(90%)  blur(10px);}
+ 100% { -moz-filter: opacity(100%) blur(0px);}
+}
+@-o-keyframes fadein {
+   0% { -o-filter: opacity(0%) blur(10px);}
+  50% { -o-filter: opacity(90%)  blur(10px);}
+ 100% { -o-filter: opacity(100%) blur(0px);}
+}
+@-ms-keyframes fadein {
+   0% { -ms-filter: opacity(0%) blur(10px);}
+  50% { -ms-filter: opacity(90%)  blur(10px);}
+ 100% { -ms-filter: opacity(100%) blur(0px);}
+}
+@keyframes fadein {
+   0% { filter: opacity(0%) blur(10px);}
+  50% { filter: opacity(90%)  blur(10px);}
+ 100% { filter: opacity(100%) blur(0px);}
 }
 #gallery_container { /* Contains all events */
   width: 80%;
   height: auto;
   margin-left: 10%;
+  background-color: #f0f0f0;
   background-image: url("images/batik-background.jpg");
   background-repeat: repeat;
+  background-position: center center;
   border: none;
   box-shadow: 0px 0px 10px 10px #080808;
   -webkit-box-shadow: 0px 0px 10px 10px #080808;
@@ -105,10 +143,10 @@ body:after {
   border-radius: 0px 0px 10px 10px;
   text-align: left;
   background-color: #b8b8b8;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  -o-transition: height 0.5s;
+  transition: height 0.3s;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -o-transition: height 0.3s;
   /* Position when absolute */
   position: absolute;
   top: 0;

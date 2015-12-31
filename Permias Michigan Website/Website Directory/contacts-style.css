@@ -22,8 +22,178 @@ body:after {
   width: 100%;
 }
 
-#test {
-  height: 2000px;
+#contacts_title {
+  height: 100px;
+  width: 80%;
+  margin: 0% 0% 0% 10%;
+  padding: 0;
   background-color: #f0f0f0;
+  z-index: 5;
+}
+#all_contacts_container {
+  height: auto;
+  width: 80%;
+  margin: 0% 0% 0% 10%;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url("images/batik-background.jpg");
+  background-repeat: repeat;
+  background-position: center center;
+  border: 1px solid #000000;
+  box-shadow: 0px 10px 5px 7px #080808;
+  -webkit-box-shadow: 0px 10px 5px 7px #080808;
+  -moz-box-shadow: 0px 10px 5px 7px #080808;
+  -o-box-shadow: 0px 10px 5px 7px #080808;
+}
+#all_contacts_overlay {
+  margin: 0;
+  height: 100%;
   width: 100%;
+  background: rgba(0,0,0,0.6);
+  border: 2px solid green;
+}
+hr {
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 0;
+  width: 90%;
+  border: 1px inset #404040;
+}
+
+.board_member_container {
+  background: none;
+  border: 1px solid red;
+  width: 22.5%; /* SIZE IS NOT FIXED */
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: visible;
+  /* Left and Right margins are specified per section */
+}
+.board_member_container .img_container {
+  width: 100%;
+  /* Using script, height = width */
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  margin: 0;
+  background-color: #000000;
+  overflow: hidden;
+}
+.board_member_container .img_container img {
+  /* Image size must be square */
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+}
+.board_member_container .description_container {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+  text-align: center;
+}
+.board_member_container .description_container .name {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: 'Palatino Linotype', Georgia, 'Baskerville', 'Book Antiqua', serif;
+  font-weight: normal;
+  margin: 5px 0px 5px 0px;
+  white-space: nowrap;
+}
+.board_member_container .description_container .name:before { /* pseudo elements for centering text overflow */
+  content: '';
+  margin: 0% 0% 0% -100%;
+}
+.board_member_container .description_container .name:after {
+  content: '';
+  margin: 0% -100% 0% 0%;
+}
+.board_member_container .description_container .position {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-family: 'Palatino Linotype', Georgia, 'Baskerville', 'Book Antiqua', serif;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0px 0px 5px 0px;
+}
+.board_member_container .description_container p {
+  color: #ffffff;
+  font-size: 1em;
+  font-family: 'Palatino Linotype', Georgia, 'Baskerville', 'Book Antiqua', serif;
+  font-weight: normal;
+  margin: 0px 0px 10px 0px;
+}
+
+/* Board members are classified into sections.
+  Each section will have different IDs that determine spacings for board_member_containers  in that section */
+.section {
+  background: none;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border: 1px solid #ffffff;
+}
+.section_title { /* style of title if it exists */
+  font-family: Georgia, Garamond, 'Book Antiqua', 'Times New Roman', serif;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.section_title p {
+  margin: 20px 0px 5px 0px;
+  color: #ffffff;
+}
+
+#section_presidents .board_member_container { /* (2) President & VP */
+  margin-left: 18%;
+  margin-right: 0;
+}
+
+#section_second .board_member_container { /* (1) Secretary */
+  margin-left: 38.75%;
+  margin-right: 0;
+}
+
+#section_third .board_member_container { /* (3) Treasurer + PRs */
+  margin-left: 8%;
+  margin-right: 0;
+}
+
+#section_fourth .board_member_container { /* (2) Event Organizers */
+  margin-left: 18%;
+  margin-right: 0;
+}
+
+#section_fifth .board_member_container { /* (2) IT & Logistics */
+  margin-left: 18%;
+  margin-right: 0;
+}
+
+
+#copyright {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  font-family: Verdana, Tahoma, Helvetica;
+  color: #f0f0f0;
+  text-align: left;
+  z-index: 99;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.6);
+}
+#copyright p {
+  margin: 10px;
 }

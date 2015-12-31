@@ -10,6 +10,7 @@
     <meta  content="Christian Axel"  name="author">
     <meta  content="The Official Permias Michigan Website"  name="description">
     <script  type="text/javascript"  src="jquery.js"></script>
+    <script  type="text/javascript"  src="contacts-script.js"></script>
   </head>
   <body>
     <header  class="large">
@@ -31,6 +32,108 @@
       <script  type="text/javascript"  src="menubar_script.js">
 </script> </header>
     <div  id="blank_space"> </div>
-    <div id="test"> </div>
+    <div  id="contacts_title">Permias Board Members</div>
+    <div  id="all_contacts_container">
+      <div  id="all_contacts_overlay">
+        <div  class="section"  id="section_presidents">
+          <!-- President & VP -->
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Sumitro Kurniawan</div>
+              <div class="position">President</div>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Ivan Steven Jayawan</div>
+              <h1>Vice President</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+        </div>
+        <div  class="section"  id="section_second">
+          <!--Secretary-->
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Laurencia Susanto</div>
+              <h1>Secretary</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+        </div>
+        <div  class="section"  id="section_third">
+          <!-- Treasurer + 2 PRs -->
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Karin Pangestu</div>
+              <h1>Treasurer</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Calista Aurelia Atmadja</div>
+              <h1>Public Relations &amp; International Representative</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Rexford Biondy Henka</div>
+              <h1>Public Relations &amp; International Representative</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+        </div>
+        <div  class="section"  id="section_fourth">
+          <!-- 2 Event Organizers -->
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Lindendary Emeraldo Himawan</div>
+              <h1>Event Organizer</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Darren Rahadian Sujanto</div>
+              <h1>Event Organizer</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+        </div>
+        <div  class="section"  id="section_fifth">
+          <!-- IT & Logistics -->
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Christian Axel</div>
+              <h1>IT Director</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+          <div  class="board_member_container">
+            <div  class="img_container"> </div>
+            <div  class="description_container">
+              <div  class="name">Rico Sebastian Cahyadi</div>
+              <h1>Director of Logistics</h1>
+              <p>Board Member Description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  id="copyright">
+      <p>Copyright© Permias Michigan 2015. Website by Christian Axel</p>
+    </div>
   </body>
 </html>
