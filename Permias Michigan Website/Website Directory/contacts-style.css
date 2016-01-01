@@ -23,13 +23,65 @@ body:after {
 }
 
 #contacts_title {
-  height: 100px;
+  height: 18em;
   width: 80%;
   margin: 0% 0% 0% 10%;
   padding: 0;
   background-color: #f0f0f0;
+  background-image: url("images/contacts_title.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #a0a0a0;
   z-index: 5;
+  overflow: visible;
 }
+#contacts_title p {
+  text-align: center;
+  font-size: 6em;
+  font-family: 'Italianno', 'Arizonia', Georgia, Garamond, 'Times New Roman', serif;
+  line-height: 3em;
+  color: #000000;
+  text-shadow: 2px 2px 3px #000000;
+  margin: 0 -500% 0 -500%;
+  white-space: nowrap;
+    /* Fade in on load */
+  -webkit-filter: blur(0px);
+  -webkit-animation: fadein linear 0.7s;
+  -moz-filter: blur(0px);
+  -moz-animation: fadein linear 0.7s;
+  -o-filter: blur(0px);
+  -o-animation: fadein linear 0.7s;
+  -ms-filter: blur(0px);
+  -ms-animation: fadein linear 0.7s;
+  filter: blur(0px);
+  animation: fadein linear 0.7s;
+}
+@-webkit-keyframes fadein {
+   0% { -webkit-filter: opacity(0%) blur(10px);}
+  50% { -webkit-filter: opacity(90%)  blur(10px);}
+ 100% { -webkit-filter: opacity(100%) blur(0px);}
+}
+@-moz-keyframes fadein {
+   0% { -moz-filter: opacity(0%) blur(10px);}
+  50% { -moz-filter: opacity(90%)  blur(10px);}
+ 100% { -moz-filter: opacity(100%) blur(0px);}
+}
+@-o-keyframes fadein {
+   0% { -o-filter: opacity(0%) blur(10px);}
+  50% { -o-filter: opacity(90%)  blur(10px);}
+ 100% { -o-filter: opacity(100%) blur(0px);}
+}
+@-ms-keyframes fadein {
+   0% { -ms-filter: opacity(0%) blur(10px);}
+  50% { -ms-filter: opacity(90%)  blur(10px);}
+ 100% { -ms-filter: opacity(100%) blur(0px);}
+}
+@keyframes fadein {
+   0% { filter: opacity(0%) blur(10px);}
+  50% { filter: opacity(90%)  blur(10px);}
+ 100% { filter: opacity(100%) blur(0px);}
+}
+
 #all_contacts_container {
   height: auto;
   width: 80%;
@@ -50,7 +102,7 @@ body:after {
   height: 100%;
   width: 100%;
   background: rgba(0,0,0,0.6);
-  border: 2px solid green;
+  border: 1px solid #000000;
 }
 hr {
   margin-left: 5%;
@@ -63,11 +115,11 @@ hr {
 
 .board_member_container {
   background: none;
-  border: 1px solid red;
+  border: none;
   width: 22.5%; /* SIZE IS NOT FIXED */
   height: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 0px;
   display: inline-block;
   vertical-align: top;
   overflow: visible;
@@ -77,8 +129,10 @@ hr {
   width: 100%;
   /* Using script, height = width */
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 1px solid #b0b0b0;
+  box-shadow: 10px 10px 6px #000000;
   margin: 0;
+  padding: 0;
   background-color: #000000;
   overflow: hidden;
 }
@@ -101,10 +155,12 @@ hr {
 .board_member_container .description_container .name {
   color: #ffffff;
   font-size: 1.5em;
-  font-family: 'Palatino Linotype', Georgia, 'Baskerville', 'Book Antiqua', serif;
+  font-family: Georgia, 'Baskerville', Garamond, 'Palatino Linotype', 'Book Antiqua', serif;
   font-weight: normal;
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px 0px 0px;
   white-space: nowrap;
+  line-height: normal;
+  text-shadow: 3px 3px 2px #000000;
 }
 .board_member_container .description_container .name:before { /* pseudo elements for centering text overflow */
   content: '';
@@ -117,17 +173,22 @@ hr {
 .board_member_container .description_container .position {
   color: #ffffff;
   font-size: 1.1em;
-  font-family: 'Palatino Linotype', Georgia, 'Baskerville', 'Book Antiqua', serif;
+  font-family: 'Times New Roman', Georgia, 'Baskerville', 'Book Antiqua', serif;
   font-weight: normal;
   font-style: italic;
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 10px 0px;
 }
 .board_member_container .description_container p {
-  color: #ffffff;
-  font-size: 1em;
-  font-family: 'Palatino Linotype', Georgia, 'Baskerville', 'Book Antiqua', serif;
+  color: #d8d8d8;
+  font-size: 0.9em;
+  font-family: Georgia, 'Baskerville', 'Times New Roman', Garamond, 'Book Antiqua', serif;
   font-weight: normal;
-  margin: 0px 0px 10px 0px;
+  margin: 0;
+  line-height: 130%;
+  /* To center overflowing text */
+  white-space: nowrap;
+  margin-left: -500%;
+  margin-right: -500%;
 }
 
 /* Board members are classified into sections.
@@ -139,7 +200,6 @@ hr {
   margin: 0;
   padding: 0;
   border: none;
-  border: 1px solid #ffffff;
 }
 .section_title { /* style of title if it exists */
   font-family: Georgia, Garamond, 'Book Antiqua', 'Times New Roman', serif;
@@ -179,6 +239,9 @@ hr {
   margin-right: 0;
 }
 
+#section_fifth { /* Bottom margin of last section */
+  margin-bottom: 100px;
+}
 
 #copyright {
   margin: 0;

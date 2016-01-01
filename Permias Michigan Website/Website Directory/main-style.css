@@ -284,7 +284,11 @@ div .round_thumb_container4 {
 	position: absolute;
 	height: 100%;
 	width: auto;
-	left: -20%;
+	top: -9999px;
+	right: -9999px;
+	left: -9999px;
+	bottom: -9999px;
+	margin: auto;
 }
 #thumb_container p {
 	margin: 7px 0px 0px 0px;
