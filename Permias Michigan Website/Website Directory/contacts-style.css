@@ -114,6 +114,7 @@ hr {
 }
 
 .board_member_container {
+  /* Left and Right margins are specified per section */
   background: none;
   border: none;
   width: 22.5%; /* SIZE IS NOT FIXED */
@@ -123,8 +124,44 @@ hr {
   display: inline-block;
   vertical-align: top;
   overflow: visible;
-  /* Left and Right margins are specified per section */
+  /* Fade in on load */
+  -webkit-filter: blur(0px);
+  -webkit-animation: fadein linear 1s;
+  -moz-filter: blur(0px);
+  -moz-animation: fadein linear 1s;
+  -o-filter: blur(0px);
+  -o-animation: fadein linear 1s;
+  -ms-filter: blur(0px);
+  -ms-animation: fadein linear 1s;
+  filter: blur(0px);
+  animation: fadein linear 1s;
 }
+@-webkit-keyframes fadein {
+   0% { -webkit-filter: opacity(0%) blur(10px);}
+  50% { -webkit-filter: opacity(90%)  blur(10px);}
+ 100% { -webkit-filter: opacity(100%) blur(0px);}
+}
+@-moz-keyframes fadein {
+   0% { -moz-filter: opacity(0%) blur(10px);}
+  50% { -moz-filter: opacity(90%)  blur(10px);}
+ 100% { -moz-filter: opacity(100%) blur(0px);}
+}
+@-o-keyframes fadein {
+   0% { -o-filter: opacity(0%) blur(10px);}
+  50% { -o-filter: opacity(90%)  blur(10px);}
+ 100% { -o-filter: opacity(100%) blur(0px);}
+}
+@-ms-keyframes fadein {
+   0% { -ms-filter: opacity(0%) blur(10px);}
+  50% { -ms-filter: opacity(90%)  blur(10px);}
+ 100% { -ms-filter: opacity(100%) blur(0px);}
+}
+@keyframes fadein {
+   0% { filter: opacity(0%) blur(10px);}
+  50% { filter: opacity(90%)  blur(10px);}
+ 100% { filter: opacity(100%) blur(0px);}
+}
+
 .board_member_container .img_container {
   width: 100%;
   /* Using script, height = width */

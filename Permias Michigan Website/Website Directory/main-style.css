@@ -207,6 +207,7 @@ div.event_desc p a:hover {
 	border: none;
 	overflow: visible;
 	padding: 0px;
+	vertical-align: top;
 }
 div .round_thumb_container1 { /* Holds each img */
 	position: relative;

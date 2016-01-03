@@ -13,7 +13,7 @@ $(".round_thumb_container1").hover(
                 .next('img').fadeIn()
                 .end().appendTo('.round_thumb_container1');
             },             
-            400);
+            500);
         isFirst1 = false;
         }
     },
@@ -33,7 +33,7 @@ $(".round_thumb_container2").hover(
                 .next('img').fadeIn()
                 .end().appendTo('.round_thumb_container2');
             },             
-            400);
+            500);
         isFirst1 = false;
         }
     },
@@ -53,7 +53,7 @@ $(".round_thumb_container3").hover(
                 .next('img').fadeIn()
                 .end().appendTo('.round_thumb_container3');
             },             
-            400);
+            500);
         isFirst1 = false;
         }
     },
@@ -73,7 +73,7 @@ $(".round_thumb_container4").hover(
                 .next('img').fadeIn()
                 .end().appendTo('.round_thumb_container4');
             },             
-            400);
+            500);
         isFirst1 = false;
         }
     },
