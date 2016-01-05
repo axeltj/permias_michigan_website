@@ -9,7 +9,8 @@
 	position: relative;
 	width: 100%;
 	max-width: 100%;
-	max-height:680px;
+	height: 100%;
+	max-height:800px;
 	margin:0px auto 0px;
 	z-index:90;
 	text-align:left; /* reset align=center */
@@ -89,7 +90,7 @@
 	left:0;
 	top:0;
 	height:100%;
-	max-height:680px;
+	max-height:800px;
 	max-width: 100%;
 	vertical-align: top;
 	border:none;
@@ -98,7 +99,7 @@
 #wowslider-container0 .ws_images ul a{
 	width:100%;
 	height:100%;
-	max-height:680px;
+	max-height:800px;
 	display:block;
 	color:transparent;
 }
@@ -114,7 +115,8 @@
 	margin:0;
 }
 #wowslider-container0 .ws_images > div > img {
-	max-height:680px;
+	height: 100%;
+	max-height:800px;
 }
 
 #wowslider-container0 .ws_images iframe {
