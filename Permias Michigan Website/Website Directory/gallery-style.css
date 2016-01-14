@@ -44,96 +44,36 @@ body:after {
   opacity: 0;
   width: 100%;
 }
-#gallery_title {
+#gallery_slider_container {
   width: 80%;
   height: 500px;
   margin-left: 10%;
   margin-bottom: 0;
   text-align: center;
   line-height: 450px;
-  background-color: #f0f0f0;
-  background-image: url("images/gallery_title.jpg");
-  background-size: cover;
-  background-position: left top;
-    /* Blur in on load */
-  -webkit-filter: blur(0px);
-  -webkit-animation: blurin linear 0.6s;
-  -moz-filter: blur(0px);
-  -moz-animation: blurin linear 0.6s;
-  -o-filter: blur(0px);
-  -o-animation: blurin linear 0.6s;
-  -ms-filter: blur(0px);
-  -ms-animation: blurin linear 0.6s;
-  filter: blur(0px);
-  animation: blurin linear 0.6s;
+  background-color: #000000;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 10px #080808;
+  -webkit-box-shadow: 0px 0px 10px 10px #080808;
+  -moz-box-shadow: 0px 0px 10px 10px #080808;
+  -o-box-shadow: 0px 0px 10px 10px #080808;
 }
-@-webkit-keyframes blurin {
-   0% { -webkit-filter: blur(10px);}
-  50% { -webkit-filter: blur(5px);}
- 100% { -webkit-filter: blur(0px);}
-}
-@-moz-keyframes blurin {
-   0% { -moz-filter: blur(10px);}
-  50% { -moz-filter: blur(5px);}
- 100% { -moz-filter: blur(0px);}
-}
-@-o-keyframes blurin {
-   0% { -o-filter: blur(10px);}
-  50% { -o-filter: blur(5px);}
- 100% { -o-filter: blur(0px);}
-}
-@-ms-keyframes blurin {
-   0% { -ms-filter: blur(10px);}
-  50% { -ms-filter: blur(5px);}
- 100% { -ms-filter: blur(0px);}
-}
-@keyframes blurin {
-   0% { filter: blur(10px);}
-  50% { filter: blur(5px);}
- 100% { filter: blur(0px);}
-}
-#gallery_title p {
-  font-family: 'Leckerli One', 'Oleo Script', Georgia, Garamond, 'Book Antiqua', serif;
-  font-size: 80px;
-  color: #000000;
-  text-shadow: 3px 3px 7px #FFFFFF;
-  margin: 0;
-  /* Fade and blur in on load */
-  -webkit-filter: blur(0px);
-  -webkit-animation: fadein linear 1s;
-  -moz-filter: blur(0px);
-  -moz-animation: fadein linear 1s;
-  -o-filter: blur(0px);
-  -o-animation: fadein linear 1s;
-  -ms-filter: blur(0px);
-  -ms-animation: fadein linear 1s;
-  filter: blur(0px);
-  animation: fadein linear 1s;
-}
-@-webkit-keyframes fadein {
-   0% { -webkit-filter: opacity(0%) blur(10px);}
-  50% { -webkit-filter: opacity(90%)  blur(10px);}
- 100% { -webkit-filter: opacity(100%) blur(0px);}
-}
-@-moz-keyframes fadein {
-   0% { -moz-filter: opacity(0%) blur(10px);}
-  50% { -moz-filter: opacity(90%)  blur(10px);}
- 100% { -moz-filter: opacity(100%) blur(0px);}
-}
-@-o-keyframes fadein {
-   0% { -o-filter: opacity(0%) blur(10px);}
-  50% { -o-filter: opacity(90%)  blur(10px);}
- 100% { -o-filter: opacity(100%) blur(0px);}
-}
-@-ms-keyframes fadein {
-   0% { -ms-filter: opacity(0%) blur(10px);}
-  50% { -ms-filter: opacity(90%)  blur(10px);}
- 100% { -ms-filter: opacity(100%) blur(0px);}
-}
-@keyframes fadein {
-   0% { filter: opacity(0%) blur(10px);}
-  50% { filter: opacity(90%)  blur(10px);}
- 100% { filter: opacity(100%) blur(0px);}
+#title_text {
+  width: 80%;
+  text-align: center;
+  font-family: Georgia, Garamond, 'Book Antiqua', serif;
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 0 0 10%;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0px 0px 10px 10px #080808;
+  -webkit-box-shadow: 0px 0px 10px 10px #080808;
+  -moz-box-shadow: 0px 0px 10px 10px #080808;
+  -o-box-shadow: 0px 0px 10px 10px #080808;
+  border-top: 1px solid #505050;
 }
 
 #gallery_container { /* Contains all events */
@@ -150,7 +90,6 @@ body:after {
   -moz-box-shadow: 0px 0px 10px 10px #080808;
   -o-box-shadow: 0px 0px 10px 10px #080808;
 }
-
 #event_container { /* Contains description and all pictures of that event */
   position: relative;
   width: 100%;
@@ -161,88 +100,34 @@ body:after {
 }
 /* Event pictures container is static margined to the right, while event description is absolute and fixed */
 #event_container .event_pictures_container { /* Contains only pictures */
-  margin: 0 0 0 20%;
+  margin: 0;
   padding: 0px 0px 45px 0px;
-  width: 80%;
+  width: 100%;
   height: auto;
-  border-left: 1px solid #303030;
   text-align: center;
   z-index: 1;
 }
-/* Every event description has this class.
-  z-index of every instance is different.
-  Each instance is differentiated by id #edN */
-#event_container .event_description_container {
-  width: 20%; /* 20% of event_container */
-  height: 100%;
-  margin: 0px;
-  border-top: 1px solid #303030;
-  border-bottom: 1px solid #303030;
-  text-align: left;
-  background-color: #000000;
-  transition: height 0.3s;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  /* Position when absolute */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2; /* overlaps event_pictures_container */
-  /* Position when fixed:
-  top: 45px;
-  left: 10%;
-  width: 16%;
-  height: 100%;
-  */
+.event_pictures_container h1 {
+  margin: 25px 0px 0px 0px;
 }
-.event_description_container a { /* link for page jump */
-  text-decoration: none;
-  font-weight: normal;
-}
-.event_description_container p.title {
-  color: #d8d8d8;
-  margin: 5px 0px 0px 5px;
-  font-size: 20px;
-  text-decoration: underline;
-  font-family: Georgia, Garamond, 'Book Antiqua', serif;
-}
-.event_description_container p {
-  color: #d8d8d8;
-  margin: 5px 0px 0px 5px;
-  font-size: 15px;
-  font-family: Georgia, Garamond, 'Book Antiqua', serif;
-}
-
-/* TODO: When adding more event descriptions,
-  add its #id here and its appropriate z-index */
-.event_description_container #ed1 {
-  z-index: 1;
-}
-.event_description_container #ed2 {
-  z-index: 2;
-}
-.event_description_container #ed3 {
-  z-index: 3;
-}
-.event_description_container #ed4 {
-  z-index: 4;
-}
-.event_description_container #ed5 {
-  z-index: 5;
-}
-
-.event_pictures_container h1 { /* titles */
+.event_pictures_container h1 a { /* titles */
   text-decoration: none;
   font-weight: normal;
   width: 100%;
   height: auto;
   padding: 0;
-  margin: 20px 0px 0px 0px;
   color: #FFFFFF;
   font-size: 30px;
-  font-family: 'Merienda One', Georgia, Garamond, 'Book Antiqua', serif;
-  text-shadow: 3px 2px 2px rgba(255, 255, 255, 0.6);
+  font-family: Georgia, Garamond, 'Book Antiqua', serif;
+  text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.8);
+}
+.event_pictures_container h1 p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #f0f0f0;
+  font-family: Georgia, Garamond, 'Book Antiqua', serif;
+  text-shadow: 1px 1px 1px rgba (240, 240, 240, 0.8);
 }
 
 #thumb_container { /* SIZE MUST STAY FIXED. Contains each separate image */
@@ -346,7 +231,7 @@ body:after {
   width: 100%;
   height: auto;
   font-size: 15px;
-  font-family: Verdana, Tahoma, Helvetica;
+  font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: #f0f0f0;
   text-align: left;
   z-index: 99;

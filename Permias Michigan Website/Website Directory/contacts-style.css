@@ -23,63 +23,24 @@ body:after {
 }
 
 #contacts_title {
-  height: 18em;
-  width: 80%;
-  margin: 0% 0% 0% 10%;
+  height: 7em;
+  width: 100%;
+  margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
-  background-image: url("images/contacts_title.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid #a0a0a0;
-  z-index: 5;
+  z-index: 30;
   overflow: visible;
+  background-color: #f0f0f0;
 }
 #contacts_title p {
   text-align: center;
-  font-size: 6em;
-  font-family: 'Italianno', 'Arizonia', Georgia, Garamond, 'Times New Roman', serif;
-  line-height: 3em;
+  font-size: 3.5em;
+  line-height: 2em;
+  font-family: Georgia, Garamond, 'Times New Roman', serif;
   color: #000000;
-  text-shadow: 2px 2px 3px #000000;
-  margin: 0 -500% 0 -500%;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0;
   white-space: nowrap;
-    /* Fade in on load */
-  -webkit-filter: blur(0px);
-  -webkit-animation: fadein linear 0.7s;
-  -moz-filter: blur(0px);
-  -moz-animation: fadein linear 0.7s;
-  -o-filter: blur(0px);
-  -o-animation: fadein linear 0.7s;
-  -ms-filter: blur(0px);
-  -ms-animation: fadein linear 0.7s;
-  filter: blur(0px);
-  animation: fadein linear 0.7s;
-}
-@-webkit-keyframes fadein {
-   0% { -webkit-filter: opacity(0%) blur(10px);}
-  50% { -webkit-filter: opacity(90%)  blur(10px);}
- 100% { -webkit-filter: opacity(100%) blur(0px);}
-}
-@-moz-keyframes fadein {
-   0% { -moz-filter: opacity(0%) blur(10px);}
-  50% { -moz-filter: opacity(90%)  blur(10px);}
- 100% { -moz-filter: opacity(100%) blur(0px);}
-}
-@-o-keyframes fadein {
-   0% { -o-filter: opacity(0%) blur(10px);}
-  50% { -o-filter: opacity(90%)  blur(10px);}
- 100% { -o-filter: opacity(100%) blur(0px);}
-}
-@-ms-keyframes fadein {
-   0% { -ms-filter: opacity(0%) blur(10px);}
-  50% { -ms-filter: opacity(90%)  blur(10px);}
- 100% { -ms-filter: opacity(100%) blur(0px);}
-}
-@keyframes fadein {
-   0% { filter: opacity(0%) blur(10px);}
-  50% { filter: opacity(90%)  blur(10px);}
- 100% { filter: opacity(100%) blur(0px);}
+  z-index: 31;
 }
 
 #all_contacts_container {
@@ -91,11 +52,10 @@ body:after {
   background-image: url("images/batik-background.jpg");
   background-repeat: repeat;
   background-position: center center;
-  border: 1px solid #000000;
-  box-shadow: 0px 10px 5px 7px #080808;
-  -webkit-box-shadow: 0px 10px 5px 7px #080808;
-  -moz-box-shadow: 0px 10px 5px 7px #080808;
-  -o-box-shadow: 0px 10px 5px 7px #080808;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  z-index: 25;
 }
 #all_contacts_overlay {
   margin: 0;
@@ -103,14 +63,7 @@ body:after {
   width: 100%;
   background: rgba(0,0,0,0.6);
   border: 1px solid #000000;
-}
-hr {
-  margin-left: 5%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 0;
-  width: 90%;
-  border: 1px inset #404040;
+  z-index: 26;
 }
 
 .board_member_container {
@@ -124,6 +77,33 @@ hr {
   display: inline-block;
   vertical-align: top;
   overflow: visible;
+}
+.board_member_container .img_container {
+  width: 100%;
+  /* Using script, height = width */
+  border-radius: 50%;
+  border: 1px solid #b0b0b0;
+  box-shadow: 10px 10px 6px #000000;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow: hidden;
+}
+.board_member_container .img_container img {
+  /* Image size must be square */
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+}
+.board_member_container .description_container {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+  text-align: center;
   /* Fade in on load */
   -webkit-filter: blur(0px);
   -webkit-animation: fadein linear 1s;
@@ -161,34 +141,6 @@ hr {
   50% { filter: opacity(90%)  blur(10px);}
  100% { filter: opacity(100%) blur(0px);}
 }
-
-.board_member_container .img_container {
-  width: 100%;
-  /* Using script, height = width */
-  border-radius: 50%;
-  border: 1px solid #b0b0b0;
-  box-shadow: 10px 10px 6px #000000;
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-  overflow: hidden;
-}
-.board_member_container .img_container img {
-  /* Image size must be square */
-  width: 100%;
-  height: 100%;
-  border: none;
-  margin: 0;
-}
-.board_member_container .description_container {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
-  background: none;
-  text-align: center;
-}
 .board_member_container .description_container .name {
   color: #ffffff;
   font-size: 1.5em;
@@ -201,11 +153,11 @@ hr {
 }
 .board_member_container .description_container .name:before { /* pseudo elements for centering text overflow */
   content: '';
-  margin: 0% 0% 0% -100%;
+  margin: 0% 0% 0% -50%;
 }
 .board_member_container .description_container .name:after {
   content: '';
-  margin: 0% -100% 0% 0%;
+  margin: 0% -50% 0% 0%;
 }
 .board_member_container .description_container .position {
   color: #ffffff;
@@ -216,7 +168,7 @@ hr {
   margin: 0px 0px 10px 0px;
 }
 .board_member_container .description_container p {
-  color: #d8d8d8;
+  color: #e0e0e0;
   font-size: 0.9em;
   font-family: Georgia, 'Baskerville', 'Times New Roman', Garamond, 'Book Antiqua', serif;
   font-weight: normal;
@@ -224,8 +176,17 @@ hr {
   line-height: 130%;
   /* To center overflowing text */
   white-space: nowrap;
-  margin-left: -500%;
-  margin-right: -500%;
+  margin-left: -50%;
+  margin-right: -50%;
+}
+.board_member_container .description_container a {
+  color: #e0e0e0;
+  font-size: 0.9em;
+  font-family: Georgia, 'Baskerville', 'Times New Roman', Garamond, 'Book Antiqua', serif;
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 0;
+  line-height: 130%
 }
 
 /* Board members are classified into sections.
@@ -261,8 +222,8 @@ hr {
   margin-right: 0;
 }
 
-#section_third .board_member_container { /* (3) Treasurer + PRs */
-  margin-left: 8%;
+#section_third .board_member_container { /* (2) Treasurer + PR */
+  margin-left: 18%;
   margin-right: 0;
 }
 
@@ -271,8 +232,8 @@ hr {
   margin-right: 0;
 }
 
-#section_fifth .board_member_container { /* (2) IT & Logistics */
-  margin-left: 18%;
+#section_fifth .board_member_container { /* (3) IT & Logistics */
+  margin-left: 8%;
   margin-right: 0;
 }
 
@@ -287,7 +248,7 @@ hr {
   width: 100%;
   height: auto;
   font-size: 15px;
-  font-family: Verdana, Tahoma, Helvetica;
+  font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: #f0f0f0;
   text-align: left;
   z-index: 99;

@@ -79,10 +79,10 @@ hr {
 #upcoming_events h2 {
 	text-align: center;
 	font-size: 40px;
-	font-family: 'Merienda One', Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-weight: bold;
 	color: #f8f8f8;
-	text-shadow: 5px 5px 2px rgba(0,0,0,0.8);
+	text-shadow: 5px 5px 4px #000000;
 	margin-top: 55px;
 	margin-bottom: 0px;
 }
@@ -294,7 +294,7 @@ div .round_thumb_container4 {
 #thumb_container p {
 	margin: 7px 0px 0px 0px;
 	font-size: 16px;
-	font-family: Verdana, Tahoma, sans-serif;
+	font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-weight: normal;
 	color: #707070;
 	text-align: center;
@@ -303,7 +303,7 @@ div .round_thumb_container4 {
 	margin: 0px;
 	font-size: 16px;
 	font-weight: normal;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Tahoma, sans-serif;
+	font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	text-decoration: underline;
 	color: #707070;
 }
@@ -393,7 +393,7 @@ div .round_thumb_container4 {
 	width: 100%;
 	height: auto;
 	font-size: 15px;
-	font-family: Verdana, Tahoma, Helvetica;
+	font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #f0f0f0;
 	text-align: left;
 	z-index: 99;

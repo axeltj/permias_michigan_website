@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>8.6</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>false</Captions>
+            <CaptionsEffect>none</CaptionsEffect>
+            <Controls>false</Controls>
+            <FontSize>14</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>gslider_save</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>fade</ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>600</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files/WOW Slider/templates/backgnd/epsilon/</ImageTemplate>
+            <ImageTemplateName>Epsilon</ImageTemplateName>
+            <ImageWidth>800</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>false</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>C:/Users/Axel/Git/permias_michigan_website/Permias Michigan Website/Website Directory/gslider_html.html</PublishFileName>
+            <PublishIndex>gslider_html.html</PublishIndex>
+            <PublishPath>C:/Users/Axel/Git/permias_michigan_website/Permias Michigan Website/Website Directory</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>0</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>2</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>10</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#ffffff</TemplateColor>
+            <TemplateFont>Roboto</TemplateFont>
+            <TemplateName>epsilon</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>C:/Users/Axel/Git/permias_michigan_website/Permias Michigan Website/Website Directory/images/temp/g_slideshow_1.jpg</url>
+                <title>g_slideshow_1</title>
+                <filesize>155648</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/Axel/Git/permias_michigan_website/Permias Michigan Website/Website Directory/images/temp/g_slideshow_2.jpg</url>
+                <title>g_slideshow_2</title>
+                <filesize>44699</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/Axel/Git/permias_michigan_website/Permias Michigan Website/Website Directory/images/temp/g_slideshow_3.jpg</url>
+                <title>g_slideshow_3</title>
+                <filesize>116370</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/Axel/Git/permias_michigan_website/Permias Michigan Website/Website Directory/images/temp/g_slideshow_4.jpg</url>
+                <title>g_slideshow_4</title>
+                <filesize>139899</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/Axel/Git/permias_michigan_website/Permias Michigan Website/Website Directory/images/temp/g_slideshow_5.jpg</url>
+                <title>g_slideshow_5</title>
+                <filesize>118457</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>
