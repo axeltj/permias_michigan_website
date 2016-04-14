@@ -190,7 +190,11 @@ body:after {
 }
 
 /* Board members are classified into sections.
-  Each section will have different IDs that determine spacings for board_member_containers  in that section */
+  Each section will have different IDs that determine spacings for board_member_containers  in that section:
+  1 entry : margin-left = 38.75%;
+  2 entries: margin-left = 18%;
+  3 entries: margin-left = 8%;
+  */
 .section {
   background: none;
   width: 100%;
@@ -217,27 +221,27 @@ body:after {
   margin-right: 0;
 }
 
-#section_second .board_member_container { /* (1) Secretary */
-  margin-left: 38.75%;
-  margin-right: 0;
-}
-
-#section_third .board_member_container { /* (2) Treasurer + PR */
+#section_second .board_member_container { /* (2) Secretary + Treasurer*/
   margin-left: 18%;
   margin-right: 0;
 }
 
-#section_fourth .board_member_container { /* (2) Event Organizers */
+#section_third .board_member_container { /* (2) PR External + PR Internal */
   margin-left: 18%;
   margin-right: 0;
 }
 
-#section_fifth .board_member_container { /* (3) IT & Logistics */
+#section_fourth .board_member_container { /* (3) Senior IT & IT + Logistics */
   margin-left: 8%;
   margin-right: 0;
 }
-
-#section_fifth { /* Bottom margin of last section */
+/* Nonexistent for BM 2016-2017
+#section_fifth .board_member_container { (3) IT & Logistics
+  margin-left: 8%;
+  margin-right: 0;
+}
+*/
+#section_fourth { /* Bottom margin of last section */
   margin-bottom: 100px;
 }
 
