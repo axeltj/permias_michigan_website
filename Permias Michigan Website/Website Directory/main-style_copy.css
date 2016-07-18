@@ -50,7 +50,7 @@ hr {
 }
 #about-us h1 {
 	font-size: 30px;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+	font-family: "Helvetica", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
 	color: #333333;
 	margin-bottom: 12px;
 	display: inline-block;
@@ -63,7 +63,7 @@ hr {
 }
 #about-us p {
 	font-size: 18px;
-	font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Helvetica", Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #333333;
 	line-height: 120%;
 	margin-top: 0px;
@@ -79,7 +79,7 @@ hr {
 #upcoming_events h2 {
 	text-align: center;
 	font-size: 40px;
-	font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Helvetica", Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-weight: bold;
 	color: #f8f8f8;
 	text-shadow: 5px 5px 4px #000000;
@@ -92,10 +92,10 @@ div.uevent_container {
 	border: 0.5px solid #000000;
 	border-radius: 15px;
 	width: 400px;
-	overflow: hidden;
 	display: inline-block;
-	background: rgb(144, 144, 144);
-	background: rgba(144, 144, 144, 0.6);
+	overflow: hidden;
+	background: rgb(176, 176, 176);
+	background: rgba(176, 176, 176, 0.6);
 }
 div.uevent_container img {
 	/* NOTE: All image thumbnails must have the same size */
@@ -105,8 +105,6 @@ div.uevent_container img {
 }
 div.uimg_container {
 	position: relative;
-	height: 266px;
-	overflow: hidden;
 }
 div.uimg_container:after{
 	content:'';
@@ -131,7 +129,7 @@ div.uimg_container:hover:after{
 div.event_desc_title {
 	font-weight: bold;
 	font-size: 18px;
-	font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Helvetica", Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #ffffff;
 	text-align: center;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.8);
@@ -139,7 +137,7 @@ div.event_desc_title {
 }
 div.event_desc p {
 	font-size: 15px;
-	font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Helvetica", Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #ffffff;
 	text-align: center;
 	margin-top: 0px;
@@ -174,7 +172,7 @@ div.event_desc p a:hover {
 }
 #home_gallery h3 a {
 	font-size: 40px;
-	font-family: Garamond, Georgia, serif;
+	font-family: "Helvetica", Garamond, Georgia, serif;
 	text-decoration: none;
 	color: #282828;
 	text-shadow: 1px 1px #888888;
@@ -296,7 +294,7 @@ div .round_thumb_container4 {
 #thumb_container p {
 	margin: 7px 0px 0px 0px;
 	font-size: 16px;
-	font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Helvetica", Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-weight: normal;
 	color: #707070;
 	text-align: center;
@@ -305,7 +303,7 @@ div .round_thumb_container4 {
 	margin: 0px;
 	font-size: 16px;
 	font-weight: normal;
-	font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Helvetica", Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	text-decoration: underline;
 	color: #707070;
 }
@@ -332,7 +330,7 @@ div .round_thumb_container4 {
 }
 #table_container th {
 	font-size: 20px;
-	font-family: Georgia, "Times New Roman", serif;
+	font-family: "Helvetica", Georgia, "Times New Roman", serif;
 	font-weight: bold;
 	color: #404040;
 	border-bottom: 1px solid #404040;
@@ -348,7 +346,7 @@ div .round_thumb_container4 {
 }
 #table_container td {
 	font-size: 18px;
-	font-family: Georgia, "Times New Roman", serif;
+	font-family: "Helvetica", Georgia, "Times New Roman", serif;
 	font-weight: normal;
 	color: #505050;
 	padding-top: 20px;
@@ -395,7 +393,7 @@ div .round_thumb_container4 {
 	width: 100%;
 	height: auto;
 	font-size: 15px;
-	font-family: Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Helvetica" Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #f0f0f0;
 	text-align: left;
 	z-index: 99;

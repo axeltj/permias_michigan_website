@@ -1,0 +1,127 @@
+header, header a, header img, header ul, header li {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari and Chrome */
+	-o-transition: all 0.5s; /* Opera */
+}
+
+/* Basic layout */
+header ul{
+	list-style-type: none;
+	float: center;
+}
+header nav{
+	width: 100%;
+	margin: 0 auto;
+}
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	color: #ffffff;
+	z-index: 101;
+	text-align: center;
+	/* Adds shadow to bottom of bar */
+	-webkit-box-shadow: 0px 0px 8px 0px #000000;
+	-moz-box-shadow: 0px 0px 8px 0px #000000;
+	-o-box-shadow: 0px 0px 8px 0px #000000;
+	box-shadow: 0px 0px 8px 0px #000000;
+	/* Adds transparent background */
+	background-color: rgba(1, 1, 1, 0.9);
+	color: rgba(1, 1, 1, 0.9);
+}
+
+header a{
+	color: #f0f0f0;
+	text-decoration: none;
+	font-family: "Helvetica", Georgia, Garamond, serif;
+	text-transform: uppercase;
+}
+header a:hover{
+	color: #888888;
+}
+
+header li{
+	display: inline;
+	float: center;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+img.navbar_logo{
+	position: absolute;
+	float: left;
+}
+img.facebook_logo, img.instagram_logo{
+	position: absolute;
+	float: right;
+}
+
+/* Sizes for the bigger menu */
+header.large{
+	height: 88px;
+}
+header.large img.navbar_logo{
+	width: 210px;
+	top: 0;
+	left: 0;
+}
+header.large ul{
+	margin-top: 35px;
+}
+header.large a{
+	font-size: 25px;
+}
+header.large img.facebook_logo{
+	width: 42px;
+	top: 25px;
+	right: 80px;
+}
+header.large img.facebook_logo:hover{
+	width:50px;
+	top: 21px;
+}
+header.large img.instagram_logo{
+	width: 42px;
+	top: 25px;
+	right: 20px;
+}
+header.large img.instagram_logo:hover{
+	width:50px;
+	top: 21px;
+}
+
+/* Sizes for the smaller menu */
+header.small{ 
+	height: 45px;
+}
+header.small img.navbar_logo{ 
+	width: 100px; 
+	top: 2px;
+	left: 4px;
+}
+header.small ul{ 
+	margin-top: 13px;
+}
+header.small a{
+	font-size: 15px;
+}
+header.small img.facebook_logo{
+	width: 20px;
+	top: 12px;
+	right: 40px;
+}
+header.small img.facebook_logo:hover{
+	width: 24px;
+	top: 10px;
+}
+header.small img.instagram_logo{
+	width: 20px;
+	top: 12px;
+	right: 10px;
+}
+header.small img.instagram_logo:hover{
+	width: 24px;
+	top:10px;
+}

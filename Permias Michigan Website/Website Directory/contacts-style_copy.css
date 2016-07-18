@@ -1,0 +1,264 @@
+body {
+  background-color: #d7d7d7;
+  margin:0;
+  padding:0;
+}
+body:after {
+  content: '';
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+}
+
+#blank_space {
+  height: 88px;
+  opacity: 0;
+  width: 100%;
+}
+
+#contacts_title {
+  height: 7em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 30;
+  overflow: visible;
+  background-color: #f0f0f0;
+}
+#contacts_title p {
+  text-align: center;
+  font-size: 3.5em;
+  line-height: 2em;
+  font-family: "Helvetica", Georgia, Garamond, 'Times New Roman', serif;
+  color: #000000;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0;
+  white-space: nowrap;
+  z-index: 31;
+}
+
+#all_contacts_container {
+  height: auto;
+  width: 80%;
+  margin: 0% 0% 0% 10%;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url("images/batik-background.jpg");
+  background-repeat: repeat;
+  background-position: center center;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  z-index: 25;
+}
+#all_contacts_overlay {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid #000000;
+  z-index: 26;
+}
+
+.board_member_container {
+  /* Left and Right margins are specified per section */
+  background: none;
+  border: none;
+  width: 22.5%; /* SIZE IS NOT FIXED */
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: visible;
+}
+.board_member_container .img_container {
+  width: 100%;
+  /* Using script, height = width */
+  border-radius: 50%;
+  border: 1px solid #b0b0b0;
+  box-shadow: 10px 10px 6px #000000;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow: hidden;
+}
+.board_member_container .img_container img {
+  /* Image size must be square */
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+}
+.board_member_container .description_container {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+  text-align: center;
+  /* Fade in on load */
+  -webkit-filter: blur(0px);
+  -webkit-animation: fadein linear 1s;
+  -moz-filter: blur(0px);
+  -moz-animation: fadein linear 1s;
+  -o-filter: blur(0px);
+  -o-animation: fadein linear 1s;
+  -ms-filter: blur(0px);
+  -ms-animation: fadein linear 1s;
+  filter: blur(0px);
+  animation: fadein linear 1s;
+}
+@-webkit-keyframes fadein {
+   0% { -webkit-filter: opacity(0%) blur(10px);}
+  50% { -webkit-filter: opacity(90%)  blur(10px);}
+ 100% { -webkit-filter: opacity(100%) blur(0px);}
+}
+@-moz-keyframes fadein {
+   0% { -moz-filter: opacity(0%) blur(10px);}
+  50% { -moz-filter: opacity(90%)  blur(10px);}
+ 100% { -moz-filter: opacity(100%) blur(0px);}
+}
+@-o-keyframes fadein {
+   0% { -o-filter: opacity(0%) blur(10px);}
+  50% { -o-filter: opacity(90%)  blur(10px);}
+ 100% { -o-filter: opacity(100%) blur(0px);}
+}
+@-ms-keyframes fadein {
+   0% { -ms-filter: opacity(0%) blur(10px);}
+  50% { -ms-filter: opacity(90%)  blur(10px);}
+ 100% { -ms-filter: opacity(100%) blur(0px);}
+}
+@keyframes fadein {
+   0% { filter: opacity(0%) blur(10px);}
+  50% { filter: opacity(90%)  blur(10px);}
+ 100% { filter: opacity(100%) blur(0px);}
+}
+.board_member_container .description_container .name {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: "Helvetica", Georgia, 'Baskerville', Garamond, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-weight: normal;
+  margin: 5px 0px 0px 0px;
+  white-space: nowrap;
+  line-height: normal;
+  text-shadow: 3px 3px 2px #000000;
+}
+.board_member_container .description_container .name:before { /* pseudo elements for centering text overflow */
+  content: '';
+  margin: 0% 0% 0% -50%;
+}
+.board_member_container .description_container .name:after {
+  content: '';
+  margin: 0% -50% 0% 0%;
+}
+.board_member_container .description_container .position {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-family: "Helvetica", 'Times New Roman', Georgia, 'Baskerville', 'Book Antiqua', serif;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0px 0px 10px 0px;
+}
+.board_member_container .description_container p {
+  color: #e0e0e0;
+  font-size: 0.9em;
+  font-family: "Helvetica", Georgia, 'Baskerville', 'Times New Roman', Garamond, 'Book Antiqua', serif;
+  font-weight: normal;
+  margin: 0;
+  line-height: 130%;
+  /* To center overflowing text */
+  white-space: nowrap;
+  margin-left: -50%;
+  margin-right: -50%;
+}
+.board_member_container .description_container a {
+  color: #e0e0e0;
+  font-size: 0.9em;
+  font-family: "Helvetica", Georgia, 'Baskerville', 'Times New Roman', Garamond, 'Book Antiqua', serif;
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 0;
+  line-height: 130%
+}
+
+/* Board members are classified into sections.
+  Each section will have different IDs that determine spacings for board_member_containers  in that section:
+  1 entry : margin-left = 38.75%;
+  2 entries: margin-left = 18%;
+  3 entries: margin-left = 8%;
+  */
+.section {
+  background: none;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.section_title { /* style of title if it exists */
+  font-family: "Helvetica", Georgia, Garamond, 'Book Antiqua', 'Times New Roman', serif;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.section_title p {
+  margin: 20px 0px 5px 0px;
+  color: #ffffff;
+}
+
+#section_presidents .board_member_container { /* (2) President & VP */
+  margin-left: 18%;
+  margin-right: 0;
+}
+
+#section_second .board_member_container { /* (2) Secretary + Treasurer*/
+  margin-left: 18%;
+  margin-right: 0;
+}
+
+#section_third .board_member_container { /* (2) PR External + PR Internal */
+  margin-left: 18%;
+  margin-right: 0;
+}
+
+#section_fourth .board_member_container { /* (3) Senior IT & IT + Logistics */
+  margin-left: 8%;
+  margin-right: 0;
+}
+/* Nonexistent for BM 2016-2017
+#section_fifth .board_member_container { (3) IT & Logistics
+  margin-left: 8%;
+  margin-right: 0;
+}
+*/
+#section_fourth { /* Bottom margin of last section */
+  margin-bottom: 100px;
+}
+
+#copyright {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  font-family: "Helvetica", Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #f0f0f0;
+  text-align: left;
+  z-index: 99;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.6);
+}
+#copyright p {
+  margin: 10px;
+}

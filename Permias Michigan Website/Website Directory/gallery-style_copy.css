@@ -1,0 +1,244 @@
+body {
+  background-color: #d7d7d7;
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+body:after {
+  content: '';
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+}
+#top_button {
+  z-index: 101;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 30px;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.7);
+  box-shadow: 5px 5px 3px 3px #000000;
+  -webkit-box-shadow: 5px 5px 3px 3px #000000;
+  -moz-box-shadow: 5px 5px 3px 3px #000000;
+  -o-box-shadow: 5px 5px 3px 3px #000000;
+}
+#top_button p {
+  margin: 4px;
+  color: #f0f0f0;
+  font-size: 16px;
+  text-decoration: underline;
+  font-family: "Helvetica", Georgia, Garamond, serif;
+}
+
+#blank_space { /* Move content down due to menubar */
+  height: 88px;
+  opacity: 0;
+  width: 100%;
+}
+#gallery_slider_container {
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 450px;
+  background-color: #000000;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 10px #080808;
+  -webkit-box-shadow: 0px 0px 10px 10px #080808;
+  -moz-box-shadow: 0px 0px 10px 10px #080808;
+  -o-box-shadow: 0px 0px 10px 10px #080808;
+}
+#title_text {
+  width: 80%;
+  text-align: center;
+  font-family: "Helvetica", Georgia, Garamond, 'Book Antiqua', serif;
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 0 0 10%;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0px 0px 10px 10px #080808;
+  -webkit-box-shadow: 0px 0px 10px 10px #080808;
+  -moz-box-shadow: 0px 0px 10px 10px #080808;
+  -o-box-shadow: 0px 0px 10px 10px #080808;
+  border-top: 1px solid #505050;
+}
+
+#gallery_container { /* Contains all events */
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  background-color: #f0f0f0;
+  background-image: url("images/batik-background.jpg");
+  background-repeat: repeat;
+  background-position: center center;
+  border: none;
+  box-shadow: 0px 0px 10px 10px #080808;
+  -webkit-box-shadow: 0px 0px 10px 10px #080808;
+  -moz-box-shadow: 0px 0px 10px 10px #080808;
+  -o-box-shadow: 0px 0px 10px 10px #080808;
+}
+#event_container { /* Contains description and all pictures of that event */
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: rgba(0,0,0,0.7);
+  border-top: 1px solid #404040;
+  margin: 0;
+}
+/* Event pictures container is static margined to the right, while event description is absolute and fixed */
+#event_container .event_pictures_container { /* Contains only pictures */
+  margin: 0;
+  padding: 0px 0px 45px 0px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 1;
+}
+.event_pictures_container h1 {
+  margin: 25px 0px 0px 0px;
+}
+.event_pictures_container h1 a { /* titles */
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-family: "Helvetica", Georgia, Garamond, 'Book Antiqua', serif;
+  text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.8);
+}
+.event_pictures_container h1 p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #f0f0f0;
+  font-family: "Helvetica", Georgia, Garamond, 'Book Antiqua', serif;
+  text-shadow: 1px 1px 1px rgba (240, 240, 240, 0.8);
+}
+
+#thumb_container { /* SIZE MUST STAY FIXED. Contains each separate image */
+  display: inline-block;
+  width: 180px;
+  height: 120px;
+  margin: 25px 5px 0px 0px;
+  position: relative;
+  border: 1px solid #505050;
+}
+
+.thumb_picture_container {
+  overflow: hidden;
+}
+.thumb_picture_container img {
+  margin: 0;
+  width: auto;
+  height: 100%; /* THUMB IMAGES ARE FITTED BY HEIGHT */
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.thumb_picture_container#small { /* Will be removed and added */
+  width: 180px;
+  height: 120px;
+  position: static;
+  margin: 0;
+  padding: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0);
+}
+.thumb_picture_container#small:after { /* for hover overlay */
+  cursor: pointer;
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.2);
+  background-image: url("images/zoom_w_180x120.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.thumb_picture_container#small:hover:after {
+  opacity: 1;
+}
+.thumb_picture_container#large {
+  position: fixed;
+  height: 80%;
+  width: auto;
+  max-width: 80%;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background: rgb(136,136,136);
+  background: rgba(136,136,136, 0.6);
+  border: 2px solid #000000;
+  z-index: 103;
+}
+
+#overlay { /* Dark baackground for large image view */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.6);
+}
+#overlay.hideoverlay {
+  opacity: 0;
+  z-index: -2;
+}
+#overlay.viewoverlay {
+  opacity: 1;
+  z-index: 102;
+}
+
+#copyright {
+  position:relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  font-family: "Helvetica", Georgia, Garamond, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #f0f0f0;
+  text-align: left;
+  z-index: 99;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.6);
+}
+#copyright p {
+  margin: 10px;
+}
+
