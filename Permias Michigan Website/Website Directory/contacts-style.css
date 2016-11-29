@@ -29,15 +29,20 @@ body:after {
   padding: 0;
   z-index: 30;
   overflow: visible;
-  background-color: #f0f0f0;
+  background-color: #FFFFFF;
+  background: -webkit-linear-gradient(top, rgba(0,0,0, 0.6), rgba(0,0,0, 0.6) 75%, rgba(0,0,0,0));
+  background: -moz-linear-gradient(top, rgba(0,0,0, 0.6), rgba(0,0,0, 0.6) 75%, rgba(0,0,0,0));
+  background: -o-linear-gradient(top, rgba(0,0,0, 0.6), rgba(0,0,0, 0.6) 75%, rgba(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.6) 75%, rgba(0,0,0,0));
+  padding-bottom: 1.8em;
 }
 #contacts_title p {
   text-align: center;
   font-size: 3.5em;
   line-height: 2em;
   font-family: Georgia, Garamond, 'Times New Roman', serif;
-  color: #000000;
-  text-shadow: 2px 2px 4px #000000;
+  color: #FDFDFD;
+  text-shadow: 2px 2px 4px #FDFDFD;
   margin: 0;
   white-space: nowrap;
   z-index: 31;
